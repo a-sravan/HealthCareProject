@@ -1,0 +1,44 @@
+<section class="plancontent">
+    <div class="main-paln">
+        <div class="left-pan">
+            <img src="../../assets/image/eld-plan-1.png" alt="">
+        </div>
+        <div class="right-pan">
+            <h5>Care Giver</h5>
+            <p>Review</p>
+            <ul class="review-start">
+                <li><a href="javascript:void(0)"><img src="../../assets/image/Starrev.png" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="../../assets/image/Starrev.png" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="../../assets/image/Starrev.png" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="../../assets/image/Starrev.png" alt=""></a></li>
+                <li><a href="javascript:void(0)"><img src="../../assets/image/Starrev.png" alt=""></a></li>
+            </ul>
+            <button class="plan-signup" (click)="showRequestcall()">Signup</button>
+            <hr>
+            <h6>Features</h6>
+            <p>These plans are designed in consultation with experts to support, motivate and keep you healthy. The plan
+                mentioned is on a monthly basis.</p>
+        </div>
+    </div>
+  </section>
+  
+  <!--request a call popup-->
+  
+  <div class="request-call" id="showcallpopup">
+    <div class="sub-req-contetn">
+  
+        <div class="req-call-content">
+            <div class="lets-talk">
+                <h6>Let's Talk</h6>
+                <button class="close-bnt" (click)="closeCallReq()" id="showcallpopup">X</button>
+            </div>
+            <div><input type="text" [(ngModel)]="callInfo.name" placeholder="Name" class="reqcall-input" maxlength="26">
+            </div>
+            <div><input type="text" [(ngModel)]="callInfo.email" placeholder="Email" class="reqcall-input"></div>
+            <div><input type="text" [(ngModel)]="callInfo.mobile" placeholder="Enter your Number" class="reqcall-input"
+                    maxlength="10"></div>
+            <div><button type="button" class="reqcall-btn" (click)="requestCall()">Request a call back </button></div>
+        </div>
+    </div>
+  
+  </div>

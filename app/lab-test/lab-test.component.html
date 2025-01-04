@@ -1,0 +1,596 @@
+<div class="container video-container">
+  <div class="row cst-video">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="bls-video-sec">
+        <div class="video-image">
+          <img src="../../assets/image/labtest-video.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+<!--tab section of bls-->
+<div class="container">
+  <div class="row cst-paregnacy-row">
+    <div class="col-md-6">
+      <div class="cst-tabmain">
+        <div class="blstraing-enqi">
+          <div class="bls-sb-heading">Lab Test</div>
+          <div><button class="blsenquirys" (click)="openEnquiry()">Enquiry</button></div>
+        </div>
+        <div class="tab-bar">
+          <ul class="med-astroul">
+            <li style="margin-top:0px;" (click)="tabslider(1)" [ngClass]="{'tab-active':tabId === 1}">
+              Introduction</li>
+            <li (click)="tabslider(2)" [ngClass]="{'tab-active':tabId === 2}">Why Choose Us</li>
+            <li (click)="tabslider(3)" [ngClass]="{'tab-active':tabId === 3}">Service Information</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="tab-content-right">
+        <div class="show-hide">
+          <div class="container-val" *ngIf="tabId === 1">
+            <ul class="introlist">
+              <li>
+                <div><img src="../../assets/image/labintro-1.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Affordable pricing across multiple diagnostics partners</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/labintro-2.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Free sample collection</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/labintro-3.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Timely & accurate report</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/labintro-4.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Digital prescription & EHR available</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="container-val" *ngIf="tabId=== 2">
+            <ul class="introlist">
+              <li>
+                <div><img src="../../assets/image/labintro-5.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Single platform for all your healthcare needs</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/labintro-6.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">NABL certified diagnostics partners</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/labintro-7.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Trained phlebotomists, assured quality service</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/labintro-8.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Access to largest network & multiple touchpoints</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="container-val" *ngIf="tabId===3">
+            <swiper [config]="configtabslider" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+              <ng-template swiperSlide>
+                <img src="../../assets/image/labtest-1.png" alt="" class="labtstdetail" (click)="showRequestcall()"
+                  style="cursor: pointer;">
+              </ng-template>
+              <ng-template swiperSlide>
+                <img src="../../assets/image/labtest-2.png" alt="" class="labtstdetail" (click)="showRequestcallbd1()"
+                  style="cursor: pointer;">
+              </ng-template>
+              <ng-template swiperSlide>
+                <img src="../../assets/image/labtest-3.png" alt="" class="labtstdetail" (click)="showRequestcallbd2()"
+                  style="cursor: pointer;">
+              </ng-template>
+              <ng-template swiperSlide>
+                <img src="../../assets/image/labtest-4.png" alt="" class="labtstdetail" (click)="showRequestcallbd3()"
+                  style="cursor: pointer;">
+              </ng-template>
+              <!-- <ng-template swiperSlide>
+                <img src="../../assets/image/labtest-1.png" alt="" class="labtstdetail">
+              </ng-template> -->
+            </swiper>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="pagesupport">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="left-spport">
+          <img src="../../assets/image/labsupport.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="right-spport">
+          <p>Any consultation is meaningless without quick and efficient laboratory tests and results. Post
+            consultation, it is important to verify the doctor's thesis and narrow down the exact cause of the ailment.
+            In order to provide the most accurate diagnosis, we use state of the art equipment and techniques, along
+            with proper sanitary measures to give you the most accurate results. Book a test with Heka Healthy You
+            online or call us to schedule your appointment!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="enroll-h-pragnancy">
+  <div class="container" style="padding: 15px 0px;" *ngIf="tabId=== 1">
+    <div class="main-health">
+      <div class="health-1">
+        <h5>Why Us?
+        </h5>
+      </div>
+      <div class="health-2">
+        <div class="health-preg-image">
+          <img src="../../assets/image/labplan-1.png" alt="">
+        </div>
+        <p class="healthdes-para">Certified Labs
+        </p>
+      </div>
+      <div class="health-3">
+        <div class="health-preg-image">
+          <img src="../../assets/image/labplan-2.png" alt="">
+        </div>
+        <p class="healthdes-para">Assured Quality
+        </p>
+      </div>
+      <div class="health-4">
+        <div class="health-preg-image">
+          <img src="../../assets/image/labplan-3.png" alt="">
+        </div>
+        <p class="healthdes-para">Online Reports
+        </p>
+      </div>
+      <div class="health-5">
+        <div class="health-preg-image">
+          <img src="../../assets/image/labplan4.png" alt="">
+        </div>
+        <p class="healthdes-para">Safety
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="enroll-h-pragnancy">
+  <div class="container" style="padding: 15px 0px;" *ngIf="tabId=== 2">
+    <div class="main-health">
+      <div class="health-1">
+        <h5>Why Us?
+        </h5>
+      </div>
+      <div class="health-2">
+        <div class="health-preg-image">
+          <img src="../../assets/image/labplan-5.png" alt="">
+        </div>
+        <p class="healthdes-para">Convenient
+        </p>
+      </div>
+      <div class="health-3">
+        <div class="health-preg-image">
+          <img src="../../assets/image/labplan-6.png" alt="">
+        </div>
+        <p class="healthdes-para">Cost Efficient
+        </p>
+      </div>
+      <div class="health-4">
+        <div class="health-preg-image">
+          <img src="../../assets/image/labplan4.png" alt="">
+        </div>
+        <p class="healthdes-para">Safer
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="enroll-h-pragnancy">
+  <div class="container" style="padding: 15px 0px;" *ngIf="tabId=== 3">
+    <div class="main-health">
+      <div class="health-1">
+        <h5>Why Us?
+        </h5>
+      </div>
+      <div class="health-2">
+        <div class="health-preg-image">
+          <img src="../../assets/image/labplan-1.png" alt="">
+        </div>
+        <p class="healthdes-para">Certified Labs
+        </p>
+      </div>
+      <div class="health-3">
+        <div class="health-preg-image">
+          <img src="../../assets/image/labplan-2.png" alt="">
+        </div>
+        <p class="healthdes-para">Assured Quality
+        </p>
+      </div>
+      <div class="health-4">
+        <div class="health-preg-image">
+          <img src="../../assets/image/labplan-3.png" alt="">
+        </div>
+        <p class="healthdes-para">Online Reports
+        </p>
+      </div>
+      <div class="health-5">
+        <div class="health-preg-image">
+          <img src="../../assets/image/labplan4.png" alt="">
+        </div>
+        <p class="healthdes-para">Safety
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="first-slider">
+    <h3 class="sliderheading">OUR PARTNERS</h3>
+    <swiper [config]="configpartner" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner3.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner4.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/parnter5.svg" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner1.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner6.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+    </swiper>
+  </div>
+</div>
+
+<div class="container">
+  <div class="second-slider">
+    <h3 class="sliderheading">NEWS ROOM</h3>
+    <swiper [config]="confignews" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <img src="../../assets/image/labnew-1.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/labnew-2.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/labnew-3.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/labnew-4.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/labnew-1.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/labnew-2.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/labnew-3.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+    </swiper>
+  </div>
+</div>
+
+<!--testimonials slider-->
+<div class="container">
+  <div class="first-slider">
+    <h3 class="sliderheadingtest">WHAT OUR CLIENTS SAY ABOUT US</h3>
+    <swiper [config]="config" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Praveen Joshi</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Amazing Service</h6>
+          <p class="feed-testi-para">My sample was collected on time, and the phlebotomist who came to my house took all
+            necessary safety precautions. The customer service representative was also well-trained to answer my
+            questions. I'm very pleased with the overall outcome.</p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Mridula Shah</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Best Lab Test ever</h6>
+          <p class="feed-testi-para">"Heka Healthy You's services have left a lasting impression on me. When the
+            phlebotomists arrived to collect the blood sample, he was properly dressed, including a mask, gloves, and
+            sanitizer. He was also punctual. I will no longer use traditional labs for my testing needs and will instead
+            use Heka Healthy You."
+          </p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Paakhi Verma</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Hassle Free Lab Test</h6>
+          <p class="feed-testi-para">Heka Healthy You's home collection services are excellent. The phlebotomists who
+            came to collect the samples were extremely well trained and outfitted with all necessary precautions such as
+            masks and gloves. I'm also pleased with how quickly the reports arrived. From now on, I will choose Heka
+            Healthy You for any testing I require.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Praveen Joshi</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Amazing Service</h6>
+          <p class="feed-testi-para">My sample was collected on time, and the phlebotomist who came to my house took all
+            necessary safety precautions. The customer service representative was also well-trained to answer my
+            questions. I'm very pleased with the overall outcome.</p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Mridula Shah</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Best Lab Test ever</h6>
+          <p class="feed-testi-para">"Heka Healthy You's services have left a lasting impression on me. When the
+            phlebotomists arrived to collect the blood sample, he was properly dressed, including a mask, gloves, and
+            sanitizer. He was also punctual. I will no longer use traditional labs for my testing needs and will instead
+            use Heka Healthy You."
+          </p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Paakhi Verma</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Hassle Free Lab Test</h6>
+          <p class="feed-testi-para">Heka Healthy You's home collection services are excellent. The phlebotomists who
+            came to collect the samples were extremely well trained and outfitted with all necessary precautions such as
+            masks and gloves. I'm also pleased with how quickly the reports arrived. From now on, I will choose Heka
+            Healthy You for any testing I require.
+          </p>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+</div>
+<!--testimonials slider-->
+
+<!--faq section-->
+<section style="background: #EBE4C8;">
+  <div class="container">
+    <div class="faq-wrapper">
+      <div class="faq-wrapper-1">
+        <h3>Got <br>Questions?</h3>
+        <h5>We’d love to answer them !</h5>
+        <div class="viewf-aq">
+          <a href routerLink="/lab-test-faq" (click)="change_route('lab-test-faq')">View FAQ</a>
+        </div>
+      </div>
+      <div class="faq-wrapper-2">
+        <img src="../../assets/image/faqbannerold.svg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="request-call" id="showcallpopup">
+  <div class="sub-req-contetn">
+
+    <div class="req-call-content">
+      <div class="lets-talk">
+        <button class="close-bnt" (click)="closeCallReq()" id="showcallpopup">X</button>
+      </div>
+      <img src="../../assets/image/cbc-popup.png" alt="" class="popupbanner">
+      <h2 class="popup-heading">CBC TESTING</h2>
+      <p class="popup-para">A complete blood count (CBC) is a blood test that is used to assess your overall health and
+        detect a variety
+        of disorders such as anaemia, infection, and leukaemia.</p>
+      <p class="popup-para">A complete blood count test assesses several aspects of your blood, including:</p>
+      <ul class="popup-list">
+        <li>Red blood cells transport oxygen.</li>
+        <li>White blood cells fight infections.</li>
+        <li>The oxygen-carrying protein in red blood cells, haemoglobin</li>
+        <li>Hematocrits is the ratio of red blood cells to plasma, the fluid component of your blood.</li>
+        <li>Platelets are blood clotting factors.</li>
+        <li>
+          A complete blood count that reveals abnormal increases or decreases in cell counts may indicate that you have
+          an
+          underlying medical condition that requires further evaluation.</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div class="request-call" id="showcallpopup1">
+  <div class="sub-req-contetn">
+
+    <div class="req-call-content">
+      <div class="lets-talk">
+        <button class="close-bnt" (click)="closeCallReq1()" id="showcallpopup">X</button>
+      </div>
+      <img src="../../assets/image/bloodtestpopup.png" alt="" class="popupbanner">
+      <h2 class="popup-heading">BLOOD SUGAR TESTING</h2>
+      <p class="popup-para">A blood glucose test determines the concentration of glucose (sugar) in your blood. A finger
+        prick or a blood
+        draw from your vein may be required for the test. Blood glucose tests are most commonly used by healthcare
+        providers to screen for Type 2 diabetes, which is a common condition.</p>
+      <p class="popup-para">Blood glucose tests are classified into two types:</p>
+      <ul class="popup-list">
+        <li>A healthcare professional collects a drop of blood — usually from a fingertip prick — for a capillary blood
+          glucose test. These tests use a test strip and a glucose metre (glucometer) to determine your blood sugar
+          level in
+          seconds.</li>
+        <li>Venous (plasma) blood glucose test: A phlebotomist draws blood from a vein (venipuncture). Glucose tests are
+          typically included as part of a blood panel, such as a basic metabolic panel. The samples will be sent to a
+          lab by
+          the provider. A medical laboratory scientist will prepare your samples and run the test on analyser machines.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div class="request-call" id="showcallpopup2">
+  <div class="sub-req-contetn">
+
+    <div class="req-call-content">
+      <div class="lets-talk">
+        <button class="close-bnt" (click)="closeCallReq2()" id="showcallpopup2">X</button>
+      </div>
+      <img src="../../assets/image/elctrlytepopup.png" alt="" class="popupbanner">
+      <h2 class="popup-heading">ELECTROLYTE TESTING</h2>
+      <p class="popup-para">Electrolytes are electrically charged minerals that help regulate the amount of fluid in
+        your body as well as
+        the acid-base balance. They also aid in the regulation of muscle and nerve activity, heart rhythm, and other
+        vital
+        functions. A serum electrolyte test, also known as an electrolyte panel, is a blood test that measures levels of
+        the
+        body's main electrolytes:</p>
+      <ul class="popup-list">
+        <li>Sodium regulates the amount of fluid in the body. It also aids in the proper functioning of your nerves and
+          muscles.</li>
+        <li>Chloride, which also aids in fluid control in the body. It also aids in the maintenance of normal blood
+          volume and
+          blood pressure.</li>
+        <li>Potassium, which aids in the proper functioning of your heart and muscles.</li>
+        <li>Bicarbonate, which aids in the maintenance of the body's acid-base balance. It also aids in the transport of
+          carbon
+          dioxide through the bloodstream.</li>
+      </ul>
+      <p class="popup-para">Abnormal electrolyte levels can indicate a serious health problem, such as kidney disease,
+        high blood pressure, or a
+        life-threatening irregularity in heart rhythm.</p>
+    </div>
+  </div>
+</div>
+
+<div class="request-call" id="showcallpopup3">
+  <div class="sub-req-contetn">
+
+    <div class="req-call-content">
+      <div class="lets-talk">
+        <button class="close-bnt" (click)="closeCallReq3()" id="showcallpopup3">X</button>
+      </div>
+      <img src="../../assets/image/creatinepopup.png" alt="" class="popupbanner">
+      <h2 class="popup-heading">CREATINE</h2>
+      <p class="popup-para">Creatine is a molecule that the body produces from amino acids. It is primarily produced in the liver, with minor
+        contributions from the kidneys and pancreas. Creatine, in the form of phosphocreatine, stores high-energy
+        phosphate groups. These phosphate groups are given to ADP in order to regenerate it into ATP, the body's primary
+        energy carrier. This role in energy production is especially important when there is a high demand for energy,
+        such as intense physical or mental activity.</p>
+      <p class="popup-para">Creatine is found in some animal-based foods, most notably meat and fish. Athletes typically take it as a powder
+        or in capsule form.</p>
+    </div>
+  </div>
+
+</div>

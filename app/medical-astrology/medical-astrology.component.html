@@ -1,0 +1,496 @@
+<div class="container video-container">
+	<div class="row cst-video">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<div class="bls-video-sec">
+				<div class="video-image">
+					<img src="../../assets/image/astrology-video.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+</div>
+<!--tab section of bls-->
+<div class="container">
+	<div class="row cst-paregnacy-row">
+		<div class="col-md-6">
+			<div class="cst-tabmain">
+				<div class="blstraing-enqi">
+					<div class="bls-sb-heading">Medical Astrology</div>
+					<div><button class="blsenquirys" (click)="openEnquiry()">Enquiry</button></div>
+				</div>
+				<div class="tab-bar">
+					<ul class="med-astroul">
+						<li style="margin-top:0px;" (click)="tabslider(1)" [ngClass]="{'tab-active':tabId === 1}">
+							Introduction</li>
+						<li (click)="tabslider(2)" [ngClass]="{'tab-active':tabId === 2}">Why Choose Us</li>
+						<li (click)="tabslider(3)" [ngClass]="{'tab-active':tabId === 3}">Service Information</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="tab-content-right">
+				<div class="show-hide">
+					<div class="container-val" *ngIf="tabId === 1">
+						<ul class="introlist">
+							<li>
+								<div><img src="../../assets/image/astroin-1.png" alt="" class="introsimage"></div>
+								<div>
+									<p class="introcontents">Vedic medical astrology reading</p>
+								</div>
+							</li>
+							<li>
+								<div><img src="../../assets/image/astroin-2.png" alt="" class="introsimage"></div>
+								<div>
+									<p class="introcontents">Identifying health and longevity issues</p>
+								</div>
+							</li>
+							<li>
+								<div><img src="../../assets/image/astroin-3.png" alt="" class="introsimage"></div>
+								<div>
+									<p class="introcontents">Planetary influences on health</p>
+								</div>
+							</li>
+							<li>
+								<div><img src="../../assets/image/astroin-4.png" alt="" class="introsimage"></div>
+								<div>
+									<p class="introcontents">Harmonization functioning with color therapy</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="container-val" *ngIf="tabId=== 2">
+						<ul class="introlist">
+							<li>
+								<div><img src="../../assets/image/astroin-5.png" alt="" class="introsimage"></div>
+								<div>
+									<p class="introcontents">Experienced consultants with more than 30 + years expeience</p>
+								</div>
+							</li>
+							<li>
+								<div><img src="../../assets/image/astroin-6.png" alt="" class="introsimage"></div>
+								<div>
+									<p class="introcontents">Proficient forecasting of possible diseases and remedies</p>
+								</div>
+							</li>
+							<li>
+								<div><img src="../../assets/image/astroin-7.png" alt="" class="introsimage"></div>
+								<div>
+									<p class="introcontents">Guidance to tackle health - related situation</p>
+								</div>
+							</li>
+							<li>
+								<div><img src="../../assets/image/astroin-8.png" alt="" class="introsimage"></div>
+								<div>
+									<p class="introcontents">Private and confidential consultation</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="container-val" *ngIf="tabId===3">
+						<swiper [config]="configtabslider" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+							<ng-template swiperSlide>
+								<div class="plan-slider">
+									<div class="plan-heading">
+										<h4>Optima Care</h4>
+									</div>
+
+									<div class="plan-detail">
+										<div class="left-detail">
+											<p><span class="bullet"></span>House Health Significations</p>
+											<p><span class="bullet"></span>Planet Health Significations</p>
+											<p><span class="bullet"></span>Sign Health Significations</p>
+											<p><span class="bullet"></span>Prime Determinants and Stressors (afflicters) for Health</p>
+											<p><span class="bullet"></span>Stress Factors affecting Health and longevity</p>
+											<p><span class="bullet"></span>Weak Organs & Organ Systems </p>
+											<p><span class="bullet"></span>Prakriti, Vikriti & Dosha Imbalances affecting health</p>
+											<p><span class="bullet"></span>Remedies: Healthy with herbs</p>
+										</div>
+									</div>
+									<button class="selecpra-button" routerLink="/medical-astrology-consultant"(click)="change_route('medical-astrology-consultant')">Select Plan</button>
+								</div>
+							</ng-template>
+							<ng-template swiperSlide>
+								<div class="plan-slider">
+									<div class="plan-heading">
+										<h4>Premium Care</h4>
+									</div>
+									<div class="plan-detail">
+										<div class="left-detail">
+											<p><span class="bullet"></span>Optima Plan inclusion</p>
+											<p><span class="bullet"></span>Disease Timing, Intensity & Healing Process</p>
+											<p><span class="bullet"></span>Timing to Start Medication and Surgery</p>
+											<p><span class="bullet"></span>Mental Issues</p>
+											<p><span class="bullet"></span>Autoimmune Issues</p>
+											<p><span class="bullet"></span>Cancers</p>
+											<p><span class="bullet"></span>Cardiovascular Issues</p>
+											<p><span class="bullet"></span>Musculoskeletal Issues</p>
+											<p><span class="bullet"></span>Remedies : Healthy with herbs & Colour therapy</p>
+										</div>
+									</div>
+									<button class="selecpra-button" routerLink="/medical-astrology-consultant"(click)="change_route('medical-astrology-consultant')">Select Plan</button>
+								</div>
+							</ng-template>
+							<ng-template swiperSlide>
+								<div class="plan-slider">
+									<div class="plan-heading">
+										<h4>Optima Care</h4>
+									</div>
+
+									<div class="plan-detail">
+										<div class="left-detail">
+											<p><span class="bullet"></span>House Health Significations</p>
+											<p><span class="bullet"></span>Planet Health Significations</p>
+											<p><span class="bullet"></span>Sign Health Significations</p>
+											<p><span class="bullet"></span>Prime Determinants and Stressors (afflicters) for Health</p>
+											<p><span class="bullet"></span>Stress Factors affecting Health and longevity</p>
+											<p><span class="bullet"></span>Weak Organs & Organ Systems </p>
+											<p><span class="bullet"></span>Prakriti, Vikriti & Dosha Imbalances affecting health</p>
+											<p><span class="bullet"></span>Remedies: Healthy with herbs</p>
+										</div>
+
+									</div>
+									<button class="selecpra-button" routerLink="/medical-astrology-consultant"(click)="change_route('medical-astrology-consultant')">Select Plan</button>
+								</div>
+							</ng-template>
+						</swiper>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section class="pagesupport">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="left-spport">
+					<img src="../../assets/image/astrosupport.png" alt="">
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="right-spport">
+					<p>Medical astrology refers to the branch of medicine that relates the positions of planets and zodiac signs
+						to body parts, body functions and diseases. It is a complex system of observation which is governed by a
+						system of given rulerships. Modern medicine finds logic in the comparisons and assumptions that this ancient
+						form of medicine is based on. The symbolisms used provide direct or indirect reference to the underlying
+						diseases and their cures. For those wanting to consult medical astrologists, Heka Healthy You unlocks a wide
+						array of trained doctors to choose from!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="enroll-h-pragnancy">
+	<div class="container" style="padding: 15px 0px;" *ngIf="tabId=== 1">
+		<div class="main-health">
+			<div class="health-1">
+				<h5>Medical
+					<br> Astrology
+				</h5>
+			</div>
+			<div class="health-2">
+				<div class="health-preg-image">
+					<img src="../../assets/image/maposi-1.png" alt="">
+				</div>
+				<p class="healthdes-para">Sahasrara
+					<br> Crown Chakra
+				</p>
+			</div>
+			<div class="health-3">
+				<div class="health-preg-image">
+					<img src="../../assets/image/maposi-2.png" alt="">
+				</div>
+				<p class="healthdes-para">Ajna
+					<br> Third Eye
+				</p>
+			</div>
+			<div class="health-4">
+				<div class="health-preg-image">
+					<img src="../../assets/image/maposi-3.png" alt="">
+				</div>
+				<p class="healthdes-para">Vishuddha
+					<br> Throat Chakra
+				</p>
+			</div>
+			<div class="health-5">
+				<div class="health-preg-image">
+					<img src="../../assets/image/maposi-4.png" alt="">
+				</div>
+				<p class="healthdes-para">Anahata
+					<br> Heart Chakra
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="enroll-h-pragnancy">
+	<div class="container" style="padding: 15px 0px;" *ngIf="tabId=== 2">
+		<div class="main-health">
+			<div class="health-1">
+				<h5>Medical
+					<br> Astrology
+				</h5>
+			</div>
+			<div class="health-2">
+				<div class="health-preg-image">
+					<img src="../../assets/image/maposi-5.png" alt="">
+				</div>
+				<p class="healthdes-para">Manipura
+					Solar
+					<br> Plexus Chakra
+				</p>
+			</div>
+			<div class="health-3">
+				<div class="health-preg-image">
+					<img src="../../assets/image/maposi-6.png" alt="">
+				</div>
+				<p class="healthdes-para">Svadhisthan
+					<br> Sacral Chakra
+				</p>
+			</div>
+			<div class="health-4">
+				<div class="health-preg-image">
+					<img src="../../assets/image/maposi-7.png" alt="">
+				</div>
+				<p class="healthdes-para">Muladhara
+					<br>Root Chakra
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="container">
+	<div class="first-slider">
+		<h3 class="sliderheading">OUR PARTNERS</h3>
+		<swiper [config]="configpartner" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner3.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner4.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/parnter5.svg" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner1.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner6.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+		</swiper>
+	</div>
+</div>
+
+<div class="container">
+	<div class="second-slider">
+		<h3 class="sliderheading">NEWS ROOM</h3>
+		<swiper [config]="confignews" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+			<ng-template swiperSlide>
+				<img src="../../assets/image/astronews-1.png" alt="" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/astronews-2.png" alt="" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/astronews-3.png" alt="" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/astronews-4.png" alt="" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/astronews-5.png" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/astronews-1.png" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/astronews-2.png" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+		</swiper>
+	</div>
+</div>
+
+<!--testimonials slider-->
+<div class="container">
+	<div class="first-slider">
+		<h3 class="sliderheadingtest">WHAT OUR CLIENTS SAY ABOUT US</h3>
+		<swiper [config]="config" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Krish Raj</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Amazing Plan</h6>
+					<p class="feed-testi-para">We've learned a lot about how medical astrology can help us with our health. Heka
+						is extremely helpful in understanding and learning about medical astrology. I would recommend this program
+						to anyone seeking natural healing.</p>
+				</div>
+			</ng-template>
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Priya Kapoor</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/blankstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Worthfull</h6>
+					<p class="feed-testi-para">I've learned a lot about how medical astrology can help us with our health. They
+						discuss how our bodies are our temples and how to care for them. I would recommend this programme to anyone
+						seeking natural healing.
+					</p>
+				</div>
+			</ng-template>
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Shruthi Bakshi</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/blankstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Soulfull</h6>
+					<p class="feed-testi-para">Fantastic program. Heka Healthy You has taught me so much about how medical
+						astrology can benefit our health. The process is slow but well worth it. I would recommend this programme to
+						anyone seeking natural healing.
+					</p>
+				</div>
+			</ng-template>
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Krish Raj</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Amazing Plan</h6>
+					<p class="feed-testi-para">We've learned a lot about how medical astrology can help us with our health. Heka
+						is extremely helpful in understanding and learning about medical astrology. I would recommend this program
+						to anyone seeking natural healing.</p>
+				</div>
+			</ng-template>
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Priya Kapoor</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/blankstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Worthfull</h6>
+					<p class="feed-testi-para">I've learned a lot about how medical astrology can help us with our health. They
+						discuss how our bodies are our temples and how to care for them. I would recommend this programme to anyone
+						seeking natural healing.
+					</p>
+				</div>
+			</ng-template>
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Shruthi Bakshi</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/blankstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Soulfull</h6>
+					<p class="feed-testi-para">Fantastic program. Heka Healthy You has taught me so much about how medical
+						astrology can benefit our health. The process is slow but well worth it. I would recommend this programme to
+						anyone seeking natural healing.
+					</p>
+				</div>
+			</ng-template>
+		</swiper>
+	</div>
+</div>
+<!--testimonials slider-->
+
+<!--faq section-->
+<section style="background: #EBE4C8;">
+	<div class="container">
+		<div class="faq-wrapper">
+			<div class="faq-wrapper-1">
+				<h3>Got <br>Questions?</h3>
+				<h5>We’d love to answer them !</h5>
+				<div class="viewf-aq">
+					<a href routerLink="/medical-astrolgy-faq"(click)="change_route('medical-astrolgy-faq')">View FAQ</a>
+				</div>
+			</div>
+			<div class="faq-wrapper-2">
+				<img src="../../assets/image/faqbannerold.svg" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+

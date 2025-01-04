@@ -1,0 +1,163 @@
+<!--service section start-->
+<section class="main-srv-section">
+  <div class="container">
+    <div class="main-service-box">
+      <div class="service-box" routerLink="/safety-training">
+        <img src="./assets/image/srv1.png" alt="">
+        <h4>LIFE SUPPORT TRAINING</h4>
+      </div>
+      <div class="service-box" routerLink="/elderlycare">
+        <img src="./assets/image/srv2.png" alt="">
+        <h4>ELDERLY CARE</h4>
+      </div>
+      <div class="service-box" routerLink="/pregnancy-care">
+        <img src="./assets/image/srv3.png" alt="">
+        <h4>PREGNANCY CARE</h4>
+      </div>
+      <div class="service-box" routerLink="/operative-care">
+        <img src="./assets/image/srv4.png" alt="">
+        <h4>OPERATIVE CARE</h4>
+      </div>
+      <div class="service-box" routerLink="/medical-astrology">
+        <img src="./assets/image/srv5.png" alt="">
+        <h4>MEDICAL ASTROLOGY</h4>
+      </div>
+      <div class="service-box" routerLink="/doctor-consultation">
+        <img src="./assets/image/srv6.png" alt="">
+        <h4>DOCTOR CONSULTATION</h4>
+      </div>
+      <div class="service-box" routerLink="/lab-test">
+        <img src="./assets/image/srv7.png" alt="">
+        <h4>LAB TEST</h4>
+      </div>
+      <div class="service-box" routerLink="/service-comingsoon">
+        <img src="./assets/image/srv8.png" alt="">
+        <h4>PHARMACY</h4>
+      </div>
+      <div class="service-box" routerLink="/service-comingsoon">
+        <img src="./assets/image/srv9.png" alt="">
+        <h4>GENERAL WELLNESS</h4>
+      </div>
+      <div class="service-box" routerLink="/service-comingsoon">
+        <img src="./assets/image/srv10.png" alt="">
+        <h4>OVERSEAS SERVICES</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<!--banner colloboration section start-->
+<section class="colloborate-sec">
+  <div class="container">
+    <h2 class="coloborate-heading">PERSONAL, AFFORDABLE & PREVENTIVE CARE BEGINS WITH COLLABORATION</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="maincollobarate">
+          <div class="stheto-image"><img src="../../assets/image/stethoscope.png" alt=""></div>
+          <h5>Faster and clinically better advanced decision</h5>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="maincollobarate">
+          <div class="stheto-image"><img src="../../assets/image/healthcare.png" alt=""></div>
+          <h5>Connected healthcare for seamless implementation</h5>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="maincollobarate">
+          <div class="stheto-image"><img src="../../assets/image/examination.png" alt=""></div>
+          <h5>Better patient outreach & healthcare</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--banner colloboration section end-->
+
+<!--INTEGRATED CARE MANAGEMENT section start-->
+<section>
+  <div class="container">
+    <h2 class="coloborate-heading">INTEGRATED CARE MANAGEMENT</h2>
+    <p class="integrated-para">COVID-19 has brought out a startling reminder that the healthcare system needs to adopt healthcare automation toward
+      integrated care management.</p>
+    <p class="integrated-para">At Heka Healthy You, we are working to find solutions to promote preventive care through our connected health
+      solutions and digital transformation, therefore finding ways to manage and address patient expectations.</p>
+    <p class="integrated-para">Through the convergence of eHealth and smart and connected health care, we help our patrons to</p>
+    <ul class="integrated-list">
+      <li>Implement new modes of care delivery</li>
+      <li>Electronic health systems for better care management</li>
+      <li>Efficient disease monitoring</li>
+      <li>Medical records management</li>
+      <li>Real -Time health monitoring</li>
+      <li>Modern Treatment options</li>
+      <li>Virtual & Remote Patient Monitoring</li>
+      <li>Explore avenues for continuity of care</li>
+      <li>Compare treatment outcomes</li>
+      <li>Manage medication requirements</li>
+      <li>Reduce patient readmission rates</li>
+      <li>Increase patient satisfaction</li>
+      <li>Chronic care management</li>
+      <li>Create platforms for patient empowerment</li>
+      <li>Tools for early detection and disease prevention</li>
+    </ul>
+    <p class="integrated-para">We work on patient-centric care and patient-participative models, to make healthcare management accessible and
+      delivering excellence through our innovative solutions.</p>
+  </div>
+</section>
+<!--INTEGRATED CARE MANAGEMENT section end-->
+<section class="splide slider-main-section" aria-label="Splide Basic HTML Example">
+  <div class="splide__track">
+    <ul class="splide__list cst-class-slider">
+      <li class="splide__slide">
+        <img src="../../assets/image/bannerframe-1.png" alt="" srcset="">
+      </li>
+      <li class="splide__slide">
+        <img src="../../assets/image/bannerframe-2.png" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="../../assets/image/bannerframe-3.png" alt="" srcset="">
+      </li>
+      <li class="splide__slide">
+        <img src="../../assets/image/bannerframe-4.png" alt="" srcset="">
+      </li>
+      <li class="splide__slide">
+        <img src="../../assets/image/bannerframe-5.png" alt="" srcset="">
+      </li>
+      <li class="splide__slide">
+        <img src="../../assets/image/bannerframe-6.png" alt="" srcset="">
+      </li>
+      <li class="splide__slide">
+        <img src="../../assets/image/bannerframe-7.png" alt="" srcset="">
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<div class="container">
+  <div class="first-slider">
+    <h3 class="sliderheading">OUR PARTNERS</h3>
+    <swiper [config]="configpartner" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner3.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner4.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/parnter5.svg" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner1.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner6.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+    </swiper> 
+  </div>
+</div>
