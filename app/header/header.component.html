@@ -1,0 +1,191 @@
+<section class="menu-section">
+
+	<div class="container">
+		<div class="mainmenu">
+			<div class="logoside">
+				<div><a href routerLink="/home"><img src="../../assets/image/logonewmodel.svg" alt=""></a></div>
+			</div>
+			<div><img src="../../assets/image/logosecond.svg" alt="" class="second-logo"></div>
+		</div>
+	</div>
+
+	<div class="menu-right-side">
+		<div class="container">
+			<div class="menulist ">
+				<ul class="menuitem">
+					<li><a href="#">Home</a></li>
+					<li><a href routerLink="/about-us">About us</a></li>
+					<li class="menu-item"><a href routerLink="/services">Our Services <span class="triangle"></span></a>
+						<ul class="drop-menu">
+							<li class="drop-menu-item"><a href routerLink="/safety-training">LIFE SUPPORT TRAINING</a></li>
+							<li class="drop-menu-item"><a href routerLink="/elderlycare">ELDERLY CARE</a></li>
+							<li class="drop-menu-item"><a href routerLink="/pregnancy-care">PREGNANCY CARE</a></li>
+							<li class="drop-menu-item"><a href routerLink="/operative-care">OPERATIVE CARE</a></li>
+							<li class="drop-menu-item"> <a href routerLink="/doctor-consultation">DOCTOR CONSULTATION</a></li>
+							<li class="drop-menu-item"><a href routerLink="/lab-test">BOOK LAB TEST</a></li>
+							<li class="drop-menu-item"><a href routerLink="/service-comingsoon">INHOUSE PATIENT CARE</a></li>
+							<li class="drop-menu-item"><a href routerLink="/medical-astrology">MEDICAL ASTROLOGY</a></li>
+							<li class="drop-menu-item"><a href routerLink="/service-comingsoon">OVERSEAS SERVICES</a></li>
+							<li class="drop-menu-item"><a href routerLink="/service-comingsoon">GENERAL WELLNESS</a></li>
+						</ul>
+					</li>
+					<li><a href routerLink="/Gallery">Gallery</a></li>
+					<li><a href routerLink="/contact-us">Contact Us</a></li>
+					<li><button class="loginbntm" (click)="showLoginModal()">Login </button> <span
+							style="color: #fff;margin: 0px 5px;">/</span> <button class="loginbntm" (click)="showSignupModal()"
+							style="padding-left: 3px;">Signup</button></li>
+				</ul>
+				<div class="enquiry-btns">
+					<a href="javascript:void(0)" class="enqurybtnss" (click)="open(content)">Enquiry</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="responsive-sec">
+	<div class="container">
+		<div class="responsive-layout">
+			<div class="respon-l1">
+				<a href="javascript:void(0)" (click)="showmenu()"><img src="../../assets/image/hamberg.png" alt=""
+						class="hamberg"></a>
+			</div>
+			<div class="responsivel2">
+				<div class="enquiry-btns showres">
+					<button class="loginbntm" (click)="showLoginModal()">Login </button> / <button class="loginbntm"
+						(click)="showSignupModal()" style="padding-right: 10px;">Signup</button>
+					<a href="javascript:void(0)" class="enqurybtnss" (click)="open(content)">Enquiry</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--responsive menu-->
+
+<div class="responsiebar" id="shownavbar">
+	<ul class="menuitem">
+		<li><a href="#">Home</a></li>
+		<li><a href routerLink="/about-us" (click)="change_route('about-us')">About us</a></li>
+		<li class="menu-item"><a href routerLink="/services">Our Services <span class="triangle"></span></a>
+			<ul class="drop-menu">
+				<li class="drop-menu-item"><a href routerLink="/safety-training">LIFE SUPPORT TRAINING</a></li>
+				<li class="drop-menu-item"><a href routerLink="/elderlycare">ELDERLY CARE</a></li>
+				<li class="drop-menu-item"><a href routerLink="/pregnancy-care">PREGNANCY CARE</a></li>
+				<li class="drop-menu-item"> <a href routerLink="/operative-care">OPERATIVE CARE</a></li>
+				<li class="drop-menu-item"><a href routerLink="/doctor-consultation">DOCTOR CONSULTATION</a></li>
+				<li class="drop-menu-item"> <a href routerLink="/lab-test">BOOK LAB TEST</a></li>
+				<li class="drop-menu-item"><a href routerLink="/service-comingsoon">INHOUSE PATIENT CARE</a></li>
+				<li class="drop-menu-item"><a href routerLink="/medical-astrology">MEDICAL ASTROLOGY</a></li>
+				<li class="drop-menu-item"><a href routerLink="/service-comingsoon" (click)="change_route('service-comingsoon')">OVERSEAS SERVICES</a></li>
+				<li class="drop-menu-item"><a href routerLink="/service-comingsoon">GENERAL WELLNESS</a></li>
+			</ul>
+		</li>
+		<li><a href routerLink="/contact-us">Contact Us</a></li>
+		<li><a href routerLink="/Gallery">Gallery</a></li>
+	</ul>
+	<button class="closenavbtns" id="shownavbar" (click)="hideMenu()">X</button>
+</div>
+<div class="modal-wrapper">
+	<div class="modal-container" *ngIf="modalContent">
+	</div>
+</div>
+
+<!--enquiry modal-->
+<ng-template #content let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Enquiry Now</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<div><input type="text" placeholder="Name" class="commin-inputbox" [(ngModel)]="enquryInfo.name"></div>
+		<div><input type="text" placeholder="+ 91 | Mobile No" class="commin-inputbox" maxlength="10"
+				[(ngModel)]="enquryInfo.mobile">
+		</div>
+		<div>
+			<ng-multiselect-dropdown [placeholder]="'Looking For'" [settings]="dropdownSettings" [data]="serviceList"
+				[(ngModel)]="selectedService" (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event)">
+			</ng-multiselect-dropdown>
+		</div>
+		<div>
+			<input type="text" placeholder="Prefered Time to Contact" class="commin-inputbox"
+				[(ngModel)]="enquryInfo.preferedTime">
+		</div>
+		<div>
+			<div>
+				<ng-multiselect-dropdown [placeholder]="'Referred For'" [settings]="dropdownSettings" [data]="referdList"
+					[(ngModel)]="selectedRefered" (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event)">
+				</ng-multiselect-dropdown>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button class="hsubmitbtn" (click)="submitEnquery()">Submit</button>
+	</div>
+</ng-template>
+
+
+<!--login modal-->
+
+<div id="showlogin" class="showpoplogin">
+	<div class="subloginapp">
+		<div class="loginanother">
+			<div class="sb-login-header">
+				<h6>Registered User</h6>
+				<button (click)="hideLoginModal()" class="dwoncutbtn">X</button>
+			</div>
+			<div class="downlimg-body">
+				<div>
+					<div><input type="email" name="" id="" placeholder="Enter Email" class="login-input"></div>
+					<div><input type="password" name="" id="" placeholder="Enter Password" class="login-input"></div>
+				</div>
+				<p class="orpara">OR</p>
+				<div><input type="text" name="" id placeholder="Mobile Number" maxlength="10" class="login-input"></div>
+				<button class="sendotpbtn">send OTP</button>
+			</div>
+			<p class="otpheading">OTP</p>
+			<div class="otpnumber">
+				<input type="text" name="" id="" maxlength="1">
+				<input type="text" name="" id="" maxlength="1">
+				<input type="text" name="" id="" maxlength="1">
+				<input type="text" name="" id="" maxlength="1">
+			</div>
+			<input type="button" value="Submit" class="loginsbmit">
+		</div>
+	</div>
+</div>
+
+<!--sign Up Modal-->
+
+<div id="showSignup" class="showpoplogin">
+	<div class="subloginapp">
+		<div class="antsignup">
+			<div class="sb-login-header">
+				<h6>Register Yourself</h6>
+				<button (click)="hideSignupModal()" class="dwoncutbtn">X</button>
+			</div>
+			<div style="margin: 15px 25px 15px 25px;"><input type="email" name="" placeholder="Email" id=""
+					class="login-signup2">
+			</div>
+			<div style="margin: 15px 25px 15px 25px;"><input type="password" name="" placeholder="Password" id=""
+					class="login-signup2">
+			</div>
+			<div class="inputuprself">
+				<input type="text" name="" id="" placeholder="first Name" style="margin-right: 5px;">
+				<input type="text" name="" id="" placeholder="Last Name" style="margin-left: 5px;">
+			</div>
+			<div class="downlimg-body">
+				<div><input type="text" name="" id placeholder="Mobile Number" maxlength="10" class="login-signup1"></div>
+				<button class="sendotpbtnsignup">send OTP</button>
+			</div>
+
+			<div class="otpnumber" style="margin-top: 30px;">
+				<input type="text" name="" id="" maxlength="1">
+				<input type="text" name="" id="" maxlength="1">
+				<input type="text" name="" id="" maxlength="1">
+				<input type="text" name="" id="" maxlength="1">
+			</div>
+			<input type="button" value="Submit" class="loginsbmit">
+		</div>
+	</div>
+</div>

@@ -1,0 +1,345 @@
+<section class="parentalcontent">
+	<div class="container">
+		<div class="row paren-row">
+			<div class="col-md-6">
+				<div class="left-parental">
+					<h4 class="parental-heading">Physiotheraphy</h4>
+					<ul class="parental-list">
+						<li><span><img class="sign-img" src="../../assets/image/signnew.svg" alt=""></span> Helps
+							regaining your stability and mobility </li>
+						<li><span><img class="sign-img" src="../../assets/image/signnew.svg" alt=""></span> Helps with
+							pain mainagement</li>
+						<li><span><img class="sign-img" src="../../assets/image/signnew.svg" alt=""></span> Geratic
+							Reconditioning</li>
+						<li><span><img class="sign-img" src="../../assets/image/signnew.svg" alt=""></span> After Joint
+							Replacement physiotheraphy</li>
+						<li><span><img class="sign-img" src="../../assets/image/signnew.svg" alt=""></span> Improves
+							improves your balance and coordination.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="right-parental">
+					<div class="req-call-div">
+						<h6 class="call-back-heading">Let's Talk</h6>
+						<div>
+							<input type="text" [(ngModel)]="callInfo.name" placeholder="Name" class="call-input" maxlength="26">
+						</div>
+						<div>
+							<input type="email" [(ngModel)]="callInfo.email" placeholder="Email" class="call-input">
+						</div>
+						<div>
+							<input type="text" [(ngModel)]="callInfo.mobile" placeholder="Input Phone Number" maxlength="10" class="call-input">
+						</div>
+						<button type="button" class="callbackbtn" (click)="requestCall()">Request a Call Back</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="pagesupport">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="left-spport">
+					<img src="../../assets/image/physiotherapht-support.png" alt="">
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="right-spport">
+					<h4 class="elderphysio">Physiotherapy for Elders</h4>
+					<p>Geriatric physiotherapy addresses issues concerning the elderly. Our metabolism, physical movements, and
+						strength decline as we age, resulting in a variety of problems. Geriatric physiotherapy is concerned with
+						the health, mobility, and strength of the elderly as they age. This type of physiotherapy is also beneficial
+						in the treatment of several health conditions in the elderly, such as arthritis and Alzheimer's disease.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="container">
+	<h2 class="main-heading">GERIATRIC RECONDITIONING</h2>
+	<p class="safety-para">The changes associated with old age comprise both physical changes and mental changes.</p>
+	<p class="safety-para">There is often a general physical decline, and people become less active. Old age can cause,
+		amongst other things:</p>
+	<ul class="roadsafety-list">
+		<li>Impaired muscle strength/muscle power of lower extremities</li>
+		<li>Impaired balance/postural control</li>
+		<li>Impaired gait</li>
+		<li>Impaired vision</li>
+		<li>Fall-associated medications/ number of medications</li>
+		<li>Impaired cognitive functions</li>
+	</ul>
+
+	<p class="safety-para">Our therapist design the program to bridge the gaps to maintain flexibility and correct postures for daily
+		functions and activities. Treating diseases and preventing or minimising disease-related and age-related functional
+		decline and reinstate functional independence after acute illnesses is also important. Strength training helps
+		significantly reduce the signs and symptoms of many diseases and chronic conditions in the following ways: </p>
+
+</div>
+
+<div class="container">
+	<div class="physiocircle-main">
+		<div class="engage-main">
+			<div class="engageimg-div"><img src="../../assets/image/physio-1.png" alt=""></div>
+			<h6>Arthritis—Reduces pain and stiffness, and increases strength and flexibility.</h6>
+		</div>
+		<div class="engage-main">
+			<div class="engageimg-div"><img src="../../assets/image/physio-2.png" alt=""></div>
+			<h6>Diabetes—Improves glycemic control. </h6>
+		</div>
+		<div class="engage-main">
+			<div class="engageimg-div"><img src="../../assets/image/physio-3.png" alt=""></div>
+			<h6>Osteoporosis—Builds bone density and reduces risk for falls. </h6>
+		</div>
+		<div class="engage-main">
+			<div class="engageimg-div"><img src="../../assets/image/physio-4.png" alt=""></div>
+			<h6>Heart disease—Reduces cardiovascular risk by improving lipid profile and overall fitness. </h6>
+		</div>
+	</div>
+	<div class="physiocircle-main-1">
+		<div class="engage-main">
+			<div class="engageimg-div"><img src="../../assets/image/physio-5.png" alt=""></div>
+			<h6>Obesity—Increases metabolism, which helps burn more calories and helps with long-term weight control. </h6>
+		</div>
+		<div class="engage-main">
+			<div class="engageimg-div"><img src="../../assets/image/physio-6.png" alt=""></div>
+			<h6>Back pain—Strengthens back and abdominal muscles to reduce stress on the spine</h6>
+		</div>
+		<div class="engage-main">
+			<div class="engageimg-div"><img src="../../assets/image/physio-7.png" alt=""></div>
+			<h6>Reduces Depression and boosts self-confidence. </h6>
+		</div>
+	</div>
+</div>
+
+<section class="booknewawssion">
+  <div class="container">
+    <p class="sessioncall-para">What are you waiting for?</p>
+    <h4 class="sessioncall-heading">Talk to our experts today to enrol your loved ones</h4>
+    <button class="sessioncall-btn" (click)="showRequestcall()">Schedule A Call</button>
+  </div>
+</section>
+
+<div class="container">
+	<div class="first-slider">
+		<h3 class="sliderheading">OUR PARTNERS</h3>
+		<swiper [config]="configpartner" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner3.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner4.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/parnter5.svg" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner1.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner6.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+		</swiper>
+	</div>
+</div>
+
+<div class="container">
+	<div class="second-slider">
+		<h3 class="sliderheading">NEWS ROOM</h3>
+		<swiper [config]="confignews" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+			<ng-template swiperSlide>
+				<img src="../../assets/image/eldernew-1.png" alt="" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/eldernew-2.png" alt="" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/eldernew-3.png" alt="" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/eldernew-4.png" alt="" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/eldernew-1.png" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/eldernew-2.png" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/eldernew-3.png" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+		</swiper>
+	</div>
+</div>
+
+<!--testimonials slider-->
+<div class="container">
+	<div class="first-slider">
+		<h3 class="sliderheadingtest">WHAT OUR CLIENTS SAY ABOUT US</h3>
+		<swiper [config]="config" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Mahesh Yadav</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Friendly Staff</h6>
+					<p class="feed-testi-para">I can't say enough good things about Heka Healthy You—they took such good care of my parents. The staff is extremely friendly and takes the time to learn about your needs and match you with the best caregiver for your parent. We were confident that our parents were in capable, caring hands with them.</p>
+				</div>
+			</ng-template>
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Kritika Kaur</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/blankstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Best elderly care program</h6>
+					<p class="feed-testi-para">I've been using Heka Healthy You for six months and they're fantastic. They are easy to work with and have an amazing staff. My mother-in-caregiver law's genuinely enjoys working with her and is extremely patient and kind. If you require family caregiving, I strongly recommend Heka Healthy You.</p>
+				</div>
+			</ng-template>
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Sneha Bakshi</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/blankstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Excellent Service</h6>
+					<p class="feed-testi-para">I enjoy collaborating with Heka Healthy You. They have excellent caregivers who truly understand and can meet the needs of their clients. The staff is dedicated to their mission and always goes above and beyond.
+
+					</p>
+				</div>
+			</ng-template>
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Mahesh Yadav</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Friendly Staff</h6>
+					<p class="feed-testi-para">I can't say enough good things about Heka Healthy You—they took such good care of my parents. The staff is extremely friendly and takes the time to learn about your needs and match you with the best caregiver for your parent. We were confident that our parents were in capable, caring hands with them.</p>
+				</div>
+			</ng-template>
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Kritika Kaur</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/blankstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Best elderly care program</h6>
+					<p class="feed-testi-para">I've been using Heka Healthy You for six months and they're fantastic. They are easy to work with and have an amazing staff. My mother-in-caregiver law's genuinely enjoys working with her and is extremely patient and kind. If you require family caregiving, I strongly recommend Heka Healthy You.</p>
+				</div>
+			</ng-template>
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Sneha Bakshi</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/blankstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Excellent Service</h6>
+					<p class="feed-testi-para">I enjoy collaborating with Heka Healthy You. They have excellent caregivers who truly understand and can meet the needs of their clients. The staff is dedicated to their mission and always goes above and beyond.
+
+					</p>
+				</div>
+			</ng-template>
+		</swiper>
+	</div>
+</div>
+<!--testimonials slider-->
+
+
+<!--request a call popup-->
+
+<div class="request-call" id="showcallpopup">
+  <div class="sub-req-contetn">
+
+      <div class="req-call-content">
+          <div class="lets-talk">
+              <h6>Let's Talk</h6>
+              <button class="close-bnt" (click)="closeCallReq()" id="showcallpopup">X</button>
+          </div>
+          <div><input type="text" [(ngModel)]="callInfo.name" placeholder="Name" class="reqcall-input" maxlength="26">
+          </div>
+          <div><input type="text" [(ngModel)]="callInfo.email" placeholder="Email" class="reqcall-input"></div>
+          <div><input type="text" [(ngModel)]="callInfo.mobile" placeholder="Enter your Number" class="reqcall-input"
+                  maxlength="10"></div>
+          <div><button type="button" class="reqcall-btn" (click)="requestCall()">Request a call back </button></div>
+      </div>
+  </div>
+
+</div>

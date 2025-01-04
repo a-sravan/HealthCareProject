@@ -1,0 +1,164 @@
+<div class="container">
+  <div class="spacing">
+    <h2 class="main-heading">STROKE REHABILITATION</h2>
+    <p class="safety-para">
+      A stroke occurs when the blood flow to a specific part of your brain is cut off. When this happens, the cells
+      don’t get oxygen and begin to die, causing numerous symptoms. The most common symptoms are changes in speech and
+      numbness or weakness of the face, legs, or arms.
+    </p>
+  </div>
+</div>
+
+<div class="container">
+  <img src="../../assets/image/stroke-6.png" alt="" class="stroke6image">
+  <p class="safety-para">The quick assessment for stroke, known by the acronym FAST (face, arms, speech, time), is seen
+    below:</p>
+</div>
+
+<div class="container">
+  <div class="spacing">
+    <div class="capital-big">
+      <div class="bigcap">
+        <h2>F</h2>
+      </div>
+      <div class="bigcap-para">
+        <p>Check for facial droop.</p>
+      </div>
+    </div>
+    <div class="capital-big">
+      <div class="bigcap">
+        <h2>A</h2>
+      </div>
+      <div class="bigcap-para">
+        <p>Hold arms out. Does one drop downward?</p>
+      </div>
+    </div>
+    <div class="capital-big">
+      <div class="bigcap">
+        <h2>S</h2>
+      </div>
+      <div class="bigcap-para">
+        <p>Is speech abnormal, delayed, or absent?</p>
+      </div>
+    </div>
+    <div class="capital-big">
+      <div class="bigcap">
+        <h2>T</h2>
+      </div>
+      <div class="bigcap-para">
+        <p>It’s time to call local emergency service if any of these symptoms are present.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <p class="safety-para">Strokes can cause significant impairment in language, cognition, motor, and sensory skills.
+    This is why it’s considered to be a leading cause of serious long-term disability.</p>
+  <p class="safety-para">Successful stroke recovery depends on a number of factors, including:</p>
+  <div class="electrical-photo">
+    <div class="elctriccontent">
+      <div class="engage-main">
+        <div class="engageimg-div"><img src="../../assets/image/stroke-1.png" alt=""></div>
+        <h6>How much damage the stroke caused</h6>
+      </div>
+    </div>
+    <div class="elctriccontent">
+      <div class="engage-main">
+        <div class="engageimg-div"><img src="../../assets/image/stroke-2.png" alt=""></div>
+        <h6>How soon recovery starts</h6>
+      </div>
+    </div>
+    <div class="elctriccontent">
+      <div class="engage-main">
+        <div class="engageimg-div"><img src="../../assets/image/stroke-3.png" alt=""></div>
+        <h6>Inner motivation & outlook towards recovery</h6>
+      </div>
+    </div>
+    <div class="elctriccontent">
+      <div class="engage-main">
+        <div class="engageimg-div"><img src="../../assets/image/stroke-4.png" alt=""></div>
+        <h6>Age, when it happened</h6>
+      </div>
+    </div>
+    <div class="elctriccontent">
+      <div class="engage-main">
+        <div class="engageimg-div"><img src="../../assets/image/stroke-5.png" alt=""></div>
+        <h6>Existing comorbidities, that can affect recovery</h6>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="container">
+  <p class="safety-para">
+    At Heka our experienced team of Doctors along with the dedicated care manager offer rehabilitation care and helps to
+    meet your stroke recovery goals, who plan and coordinate rehab program to help meet your stroke recovery goals.
+  </p>
+  <p class="safety-para">
+    1. Physiatrist – specialises in rehabilitation following injuries, accidents or illness.
+  </p>
+  <p class="safety-para">
+    2. Neurologist – specialises in the prevention, diagnosis and treatment of stroke and other diseases of the brain
+    and spinal cord.
+  </p>
+  <p class="safety-para">
+    3. Rehabilitation nurse – helps people with disabilities and helps survivors manage health problems like diabetes
+    and high blood pressure and adjust to life after stroke.
+  </p>
+  <p class="safety-para">
+    4. Physical therapist – helps with problems in moving and balance, suggesting exercises to strengthen muscles for
+    walking, standing and other activities.
+  </p>
+  <p class="safety-para">
+    5. Occupational therapist – helps with strategies to manage daily activities such as eating, bathing, dressing,
+    writing and cooking.
+  </p>
+  <p class="safety-para">
+    6. Speech-therapist – helps with talking, reading and writing, and shares strategies to help with swallowing
+    problems.
+  </p>
+  <p class="safety-para">
+    7. Dietician – healthy eating and special diets low in sodium, fat and calories.
+  </p>
+
+  <p class="safety-para">
+    8. Neuropsychologist – diagnoses and treats survivors who face changes in thinking, memory and behaviour.
+  </p>
+
+  <p class="safety-para">
+    9. Recreation Therapist. Helps with strategies to improve the thinking and movement skills needed to join in
+    recreational activities.
+  </p>
+</div>
+
+<section class="booknewawssion">
+  <div class="container">
+    <p class="sessioncall-para">What are you waiting for?</p>
+    <h4 class="sessioncall-heading">Book A Session Now</h4>
+    <button class="sessioncall-btn" (click)="showRequestcall()">Schedule A Call</button>
+  </div>
+</section>
+
+<!--request a call popup-->
+
+<div class="request-call" id="showcallpopup">
+  <div class="sub-req-contetn">
+
+      <div class="req-call-content">
+          <div class="lets-talk">
+              <h6>Let's Talk</h6>
+              <button class="close-bnt" (click)="closeCallReq()" id="showcallpopup">X</button>
+          </div>
+          <div><input type="text" [(ngModel)]="callInfo.name" placeholder="Name" class="reqcall-input" maxlength="26">
+          </div>
+          <div><input type="text" [(ngModel)]="callInfo.email" placeholder="Email" class="reqcall-input"></div>
+          <div><input type="text" [(ngModel)]="callInfo.mobile" placeholder="Enter your Number" class="reqcall-input"
+                  maxlength="10"></div>
+          <div><button type="button" class="reqcall-btn" (click)="requestCall()">Request a call back </button></div>
+      </div>
+  </div>
+
+</div>

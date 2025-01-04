@@ -1,0 +1,397 @@
+<div class="container video-container">
+  <div class="row cst-video">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="bls-video-sec">
+        <div class="video-image">
+          <img src="../../assets/image/operative-video.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+<!--tab section of bls-->
+<div class="container">
+  <div class="row cst-paregnacy-row">
+    <div class="col-md-6">
+      <div class="cst-tabmain">
+        <div class="blstraing-enqi">
+          <div class="bls-sb-heading">Operative Care</div>
+          <div><button class="blsenquirys" (click)="openEnquiry()">Enquiry</button></div>
+        </div>
+        <div class="tab-bar">
+          <ul class="med-astroul">
+            <li style="margin-top:0px;" (click)="tabslider(1)" [ngClass]="{'tab-active':tabId === 1}">
+              Introduction</li>
+            <li (click)="tabslider(2)" [ngClass]="{'tab-active':tabId === 2}">Why Choose Us</li>
+            <li (click)="tabslider(3)" [ngClass]="{'tab-active':tabId === 3}">Service Information</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="tab-content-right">
+        <div class="show-hide">
+          <div class="container-val" *ngIf="tabId === 1">
+            <ul class="introlist">
+              <li>
+                <div><img src="../../assets/image/operativeint-1.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Experienced Doctors for management and rehabilitation services. </p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/operativeint-2.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Comprehensive care to promote early recovery.</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/operativeint-3.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Transparent and affordable prices for long/ short term plans. </p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/operativeint-4.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Periodic follow up and remote patient monitoring to expedite clinical care.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="container-val" *ngIf="tabId===2">
+            <swiper [config]="configtabslider" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+              <ng-template swiperSlide>
+                <img src="../../assets/image/opertaive-se-tab-1.png" alt="" class="labtstdetail"
+                  (click)="showRequestcall()" style="cursor: pointer;">
+              </ng-template>
+              <ng-template swiperSlide>
+                <img src="../../assets/image/opertaive-se-tab-2.png" alt="" class="labtstdetail"
+                  (click)="showRequestcallbd1()" style="cursor: pointer;">
+              </ng-template>
+              <ng-template swiperSlide>
+                <img src="../../assets/image/opertaive-se-tab-3.png" alt="" class="labtstdetail"
+                  (click)="showRequestcallbd2()" style="cursor: pointer;">
+              </ng-template>
+              <ng-template swiperSlide>
+                <img src="../../assets/image/opertaive-se-tab-4.png" alt="" class="labtstdetail"
+                  (click)="showRequestcallbd3()" style="cursor: pointer;">
+              </ng-template>
+            </swiper>
+          </div>
+          <div class="container-val" *ngIf="tabId===3">
+            <swiper [config]="configtabslider" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+              <ng-template swiperSlide>
+                <img src="../../assets/image/opertaive-th-tab-1.png" alt="" class="labtstdetail"
+                  (click)="showRequestcall()" style="cursor: pointer;">
+              </ng-template>
+              <ng-template swiperSlide>
+                <img src="../../assets/image/opertaive-th-tab-2.png" alt="" class="labtstdetail"
+                  (click)="showRequestcallbd1()" style="cursor: pointer;" routerLink="/stroke-rehabilitation"
+                  (click)="change_route('stroke-rehabilitation')">
+              </ng-template>
+              <ng-template swiperSlide>
+                <img src="../../assets/image/opertaive-th-tab-3.png" alt="" class="labtstdetail"
+                  (click)="showRequestcallbd2()" style="cursor: pointer;">
+              </ng-template>
+              <ng-template swiperSlide>
+                <img src="../../assets/image/opertaive-th-tab-4.png" alt="" class="labtstdetail"
+                  (click)="showRequestcallbd3()" style="cursor: pointer;">
+              </ng-template>
+            </swiper>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="pagesupport">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="left-spport">
+          <img src="../../assets/image/operativesupport.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="right-spport">
+          <p>Any operation is incomplete without comprehensive aftercare. While the operation itself may last a small
+            duration, operative aftercare can range anywhere from a few days to months at end. A well-planned routine
+            will ensure that the patient does not contract any post-operative pulmonary complication (PCCs) or
+            infections. To ensure a safe and speedy recovery, one should be aided by well-trained and professional staff
+            that understands the medical complications that may arise during the post-op phase. Heka Healthy You has a
+            range of trained professionals that will assist you through this journey and make your recovery a pleasant
+            one!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="enroll-h-pragnancy">
+  <div class="container" style="padding: 15px 0px;">
+    <div class="main-health">
+      <div class="health-1">
+        <h5>Care We <br> Provide
+        </h5>
+      </div>
+      <div class="health-2">
+        <div class="health-preg-image">
+          <img src="../../assets/image/care-provide-1.png" alt="">
+        </div>
+        <p class="healthdes-para">Certified <br> Caretaker
+        </p>
+      </div>
+      <div class="health-3">
+        <div class="health-preg-image">
+          <img src="../../assets/image/care-provide-2.png" alt="">
+        </div>
+        <p class="healthdes-para">Prescribed <br>Medicines
+        </p>
+      </div>
+      <div class="health-4">
+        <div class="health-preg-image">
+          <img src="../../assets/image/care-provide-3.png" alt="">
+        </div>
+        <p class="healthdes-para">Proper <br> Nutrition
+        </p>
+      </div>
+      <div class="health-5">
+        <div class="health-preg-image">
+          <img src="../../assets/image/care-provide-4.png" alt="">
+        </div>
+        <p class="healthdes-para">Regular <br> Follow-ups
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="first-slider">
+    <h3 class="sliderheading">OUR PARTNERS</h3>
+    <swiper [config]="configpartner" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner3.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner4.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/parnter5.svg" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner1.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner6.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+    </swiper>
+  </div>
+</div>
+
+<div class="container">
+  <div class="second-slider">
+    <h3 class="sliderheading">NEWS ROOM</h3>
+    <swiper [config]="confignews" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <img src="../../assets/image/operative-new-1.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/operative-new-2.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/operative-new-3.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/operative-new-4.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/operative-new-1.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/operative-new-2.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/operative-new-3.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+    </swiper>
+  </div>
+</div>
+
+<!--testimonials slider-->
+<div class="container">
+  <div class="first-slider">
+    <h3 class="sliderheadingtest">WHAT OUR CLIENTS SAY ABOUT US</h3>
+    <swiper [config]="config" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Alok Gupta</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Best app for consultation</h6>
+          <p class="feed-testi-para">They had expertise and professional qualifications. They had such a wonderful
+            demeanour that they put my mum at ease.</p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Khushi Roy</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Amazing Doctors</h6>
+          <p class="feed-testi-para">They are courteous, extremely nice, and have good equipment and food. Everything
+            here is really perfect, and they have a lot of staff who are friendly and helpful. Here, everything is
+            perfect.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Riya Shree</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Simple & Convenient</h6>
+          <p class="feed-testi-para">I've been fine and able to move and function properly for a month thanks to their
+            constant efforts. I appreciate everything the Heka Health You team has done for my family and me.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Alok Gupta</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Best app for consultation</h6>
+          <p class="feed-testi-para">They had expertise and professional qualifications. They had such a wonderful
+            demeanour that they put my mum at ease.</p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Khushi Roy</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Amazing Doctors</h6>
+          <p class="feed-testi-para">They are courteous, extremely nice, and have good equipment and food. Everything
+            here is really perfect, and they have a lot of staff who are friendly and helpful. Here, everything is
+            perfect.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Riya Shree</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Simple & Convenient</h6>
+          <p class="feed-testi-para">I've been fine and able to move and function properly for a month thanks to their
+            constant efforts. I appreciate everything the Heka Health You team has done for my family and me.
+          </p>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+</div>
+<!--testimonials slider-->
+
+<!--faq section-->
+<section style="background: #EBE4C8;">
+  <div class="container">
+    <div class="faq-wrapper">
+      <div class="faq-wrapper-1">
+        <h3>Got <br>Questions?</h3>
+        <h5>We’d love to answer them !</h5>
+        <div class="viewf-aq">
+          <a href routerLink="/operative-care-faq" (click)="change_route('operative-care-faq')">View FAQ</a>
+        </div>
+      </div>
+      <div class="faq-wrapper-2">
+        <img src="../../assets/image/faqbannerold.svg" alt="">
+      </div>
+    </div>
+  </div>
+</section>

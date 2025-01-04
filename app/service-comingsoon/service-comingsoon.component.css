@@ -1,0 +1,30 @@
+.wrapper-heading{
+    font-size:40px;
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+}
+.werapper-para{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+    margin: 20px 0;
+}
+.werapper-image{
+    display: block;
+    margin: 30px auto;
+    width: 50%;
+}
+.how-workimg{
+    display: block;
+    margin: 25px auto;
+    width: 65%;
+}
+.how-we-work{
+	border-bottom: 1px solid #60A9EE;
+    border-top: 1px solid #60A9EE;
+}
+.comingsoon{
+    margin: 25px 0px 30px 0px;
+}

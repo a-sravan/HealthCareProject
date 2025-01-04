@@ -1,0 +1,110 @@
+<div class="container">
+  <div class="spacing">
+    <h2 class="main-heading">MEDICAL ASTROLOGY</h2>
+    <p class="safety-para">
+      The ancient science of Vedic Astrology, medical astrology is focused on the Physical and Mental Health related
+      wisdom, wellbeing, longevity, duration of diseases and predict fatality of any diseases.
+    </p>
+  </div>
+</div>
+
+
+<section class="aidkit-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="right-spport">
+          <p class="safety-para">Each person's individual astrological birth chart has many layers—from the planets and
+            signs to the houses
+            and aspects—that helps to understand personality and life path.</p>
+          <p class="safety-para">Planets and Horoscope will help identify Chakras energy, physical, mental, emotional
+            strength, and diseases in
+            the human body. Every planet relates to respective chakras in our astral body.</p>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="left-spport">
+          <img src="../../assets/image/medical-cons-1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <p class="safety-para">
+    Chakras indicate qualities of a person through ruling planets. If any planet is weak, respective chakra associated
+    with that planet would also be weak. This also means that the specific chakra energy is debilitated; hence health
+    issues related to that chakra are caused.
+  </p>
+</div>
+
+<div class="container">
+  <h2 class="main-heading">HOW IT HELPS</h2>
+  <ul class="safety-paraul">
+    <li>Tool to understand any ones physical status; </li>
+    <li>Gain perspective on personality traits, health, external environment and outlook on life; </li>
+    <li>Recognise the health problem areas in your body and ways to overcome them;</li>
+    <li>This reading can help patients to understand their needs and define the path they need to follow to being
+      healthy.</li>
+  </ul>
+</div>
+
+
+
+<div class="container">
+  <div class="spacing">
+    <img src="../../assets/image/medical-cons-2.png" alt="" class="roadmap-fristkitastr">
+  </div>
+  <h2 class="main-heading">HOW IT WORKS</h2>
+  <p class="safety-para">
+    A natal or birth chart is mathematically calculated to determine the precise position of the planets at the moment
+    of birth. While the planets and stars act as our guides, they are also symbols and systems of energy that can help
+    us discover deeper insights about which we are, and how we can change and transform our lives.
+  </p>
+  <div class="spacing">
+    <img src="../../assets/image/medical-cons-3.png" alt="" class="roadmap-fristkit">
+  </div>
+  <p class="safety-para">
+    Colour is another element in our natal chart that can help bring us closer to wholeness. This therapy is also known
+    as Colour Therapy. The astrologer determines which colour and their meanings a person may work with to heal, step
+    more into their purpose and wholeness, and mitigate difficulties in their life. According to Vedic astrology,
+    colours are assigned to the navgrahas (nine planets) in the horoscope, which are said to govern the entire life of
+    an individual from birth till death and beyond. These planets are also reflectors of rays of different hues, and
+    since each zodiac sign is ruled by a different planet, they work with to heal, progress into their life’s purpose
+    and navigate through challenges.
+  </p>
+
+</div>
+
+
+
+<section class="booknewawssion">
+  <div class="container">
+    <p class="sessioncall-para">What are you waiting for?</p>
+    <h4 class="sessioncall-heading">Get to know about your health</h4>
+    <button class="sessioncall-btn" (click)="showRequestcall()">Schedule A Call</button>
+  </div>
+</section>
+
+
+<!--request a call popup-->
+
+<div class="request-call" id="showcallpopup">
+  <div class="sub-req-contetn">
+
+      <div class="req-call-content">
+          <div class="lets-talk">
+              <h6>Let's Talk</h6>
+              <button class="close-bnt" (click)="closeCallReq()" id="showcallpopup">X</button>
+          </div>
+          <div><input type="text" [(ngModel)]="callInfo.name" placeholder="Name" class="reqcall-input" maxlength="26">
+          </div>
+          <div><input type="text" [(ngModel)]="callInfo.email" placeholder="Email" class="reqcall-input"></div>
+          <div><input type="text" [(ngModel)]="callInfo.mobile" placeholder="Enter your Number" class="reqcall-input"
+                  maxlength="10"></div>
+          <div><button type="button" class="reqcall-btn" (click)="requestCall()">Request a call back </button></div>
+      </div>
+  </div>
+
+</div>

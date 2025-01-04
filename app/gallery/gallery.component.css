@@ -1,0 +1,16 @@
+
+.header-banner {
+    background-image: url("../../assets/header-banner.png");
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-text {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgb(26 26 26);
+    font-size: 45px;
+    font-weight: bold;
+    align-items: center;
+    align-self: center;
+}

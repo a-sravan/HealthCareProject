@@ -1,0 +1,135 @@
+<div class="container">
+  <div class="spacing">
+    <h2 class="main-heading">ROAD SAFETY</h2>
+    <p class="safety-para">
+      WHO estimates that 1.3 million people die, 20 – 50 million gets injured in road accidents globally every year.
+      India
+      records 80,000 deaths annually in road crashes, there is a road accident every minute, whereas one fatal accident
+      takes lives every four minutes.
+    </p>
+    <p class="safety-para">Ministry of Road Transport & Highways attributes 2 reasons for the accidents:</p>
+    <p class="safety-para">1. Carelessness of the driver</p>
+    <p class="safety-para">2. Lack of road safety awareness methods and techniques.</p>
+    <p class="safety-para">With the number of vehicles on our roads increasing with every passing hour, it’s of vital
+      importance for
+      everyone
+      to
+      have traffic awareness and understand and respect all the road safety rules in India.</p>
+    <p class="safety-para">Since road accidents involves roads, motor vehicles and human beings, hence it needs overall
+      development of the
+      strategies and interventions at multi - functional levels.</p>
+  </div>
+  <div class="spacing">
+    <h2 class="main-heading">REASONS THAT HAMPER ROAD SAFETY ISSUES</h2>
+    <p class="safety-para">Road safety in India is very poor. Despite several government rules and regulations, there
+      are mishaps and
+      accidents. Here are some of the issues: </p>
+
+    <div class="spacing">
+      <img src="../../assets/image/roadsatetymap.svg" alt="" style="width: 100%;">
+    </div>
+
+    <div class="spacing">
+      <h2 class="main-heading">CONSEQUENCES OF ROAD ACCIDENTS</h2>
+      <ul class="roadsafety-list">
+        <li>Around 400 persons are dying every day in road accident deaths in India</li>
+        <li>Young males under the age group of 25 years are dying more than young females.</li>
+        <li>Kids and youngsters (14 to 29 years age) are dying more in road crashes.</li>
+        <li>Loss of Bread earning member to a family & household productivity loss.</li>
+        <li>Huge financial loss in road crash victims emergency and medical treatment.</li>
+        <li>Workplace productivity loss due to non-reporting of employee.</li>
+        <li>Loss to business because of untimely dispatch.</li>
+        <li>Loss to insurance companies.</li>
+        <li>Traffic Congestion & inconvenience.</li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="engage-main">
+          <div class="engageimg-div"><img src="../../assets/image/road-saf-1.png" alt=""></div>
+          <h6>Safe Driving Practices & SOP’s</h6>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="engage-main">
+          <div class="engageimg-div"><img src="../../assets/image/road-saf-2.png" alt=""></div>
+          <h6>Traffic Rules and Regulations – Traffic Offences, Fines, Road Signs & Markings</h6>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="engage-main">
+          <div class="engageimg-div"><img src="../../assets/image/road-saf-3.png" alt=""></div>
+          <h6>Traffic Violations & Offences Familiarisation with Central Motor Vehicle Act, 1988.</h6>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="engage-main">
+          <div class="engageimg-div"><img src="../../assets/image/road-saf-4.png" alt=""></div>
+          <h6>Personal & Medical aptitude for safe driving</h6>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="engage-main">
+          <div class="engageimg-div"><img src="../../assets/image/road-saf-5.png" alt=""></div>
+          <h6>Factors influencing driving – stress, alcohol, drugs & mobile phone use.</h6>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="engage-main">
+          <div class="engageimg-div"><img src="../../assets/image/road-saf-6.png" alt=""></div>
+          <h6>Driving under difficult and potentially dangerous conditions – weather, terrain, traffic, visibility.</h6>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="engage-main">
+          <div class="engageimg-div"><img src="../../assets/image/road-saf-7.png" alt=""></div>
+          <h6>Defensive Driving & Road Rage avoidance.</h6>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="engage-main">
+          <div class="engageimg-div"><img src="../../assets/image/road-saf-8.png" alt=""></div>
+          <h6>Use of ISI conformed headgear, reflective tapes for drivers of 2 wheelers and Safety protocols for drivers
+            of 4 wheelers.</h6>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="engage-main">
+          <div class="engageimg-div"><img src="../../assets/image/road-saf-9.png" alt=""></div>
+          <h6>Preventive and breakdown maintenance</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="booknewawssion">
+  <div class="container">
+    <p class="sessioncall-para">What are you waiting for?</p>
+    <h4 class="sessioncall-heading">Book A Session Now</h4>
+    <button class="sessioncall-btn" (click)="showRequestcall()">Schedule A Call</button>
+  </div>
+</section>
+
+
+<!--request a call popup-->
+
+<div class="request-call" id="showcallpopup">
+  <div class="sub-req-contetn">
+
+      <div class="req-call-content">
+          <div class="lets-talk">
+              <h6>Let's Talk</h6>
+              <button class="close-bnt" (click)="closeCallReq()" id="showcallpopup">X</button>
+          </div>
+          <div><input type="text" [(ngModel)]="callInfo.name" placeholder="Name" class="reqcall-input" maxlength="26">
+          </div>
+          <div><input type="text" [(ngModel)]="callInfo.email" placeholder="Email" class="reqcall-input"></div>
+          <div><input type="text" [(ngModel)]="callInfo.mobile" placeholder="Enter your Number" class="reqcall-input"
+                  maxlength="10"></div>
+          <div><button type="button" class="reqcall-btn" (click)="requestCall()">Request a call back </button></div>
+      </div>
+  </div>
+
+</div>

@@ -1,0 +1,325 @@
+<section class="parentalcontent">
+	<div class="container">
+		<div class="row paren-row">
+			<div class="col-md-6">
+				<div class="left-parental">
+					<h4 class="parental-heading">Recovery Plan</h4>
+					<ul class="parental-list">
+						<li><span><img class="sign-img" src="../../assets/image/signnew.svg" alt=""></span> Neuro Rehabilitation
+							program </li>
+						<li><span><img class="sign-img" src="../../assets/image/signnew.svg" alt=""></span> Cardiovascular
+							rehabilitation program</li>
+						<li><span><img class="sign-img" src="../../assets/image/signnew.svg" alt=""></span> Improvise strength,
+							balance, flexibility, cognitive function.</li>
+						<li><span><img class="sign-img" src="../../assets/image/signnew.svg" alt=""></span> Recovery program - post
+							replacement surgery, arthritis & injuries.</li>
+						<li><span><img class="sign-img" src="../../assets/image/signnew.svg" alt=""></span> Strength and balance
+							training </li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="right-parental">
+					<div class="req-call-div">
+						<h6 class="call-back-heading">Let's Talk</h6>
+						<div>
+							<input type="text" [(ngModel)]="callInfo.name" placeholder="Name" class="call-input" maxlength="26">
+						</div>
+						<div>
+							<input type="email" [(ngModel)]="callInfo.email" placeholder="Email" class="call-input">
+						</div>
+						<div>
+							<input type="text" [(ngModel)]="callInfo.mobile" placeholder="Input Phone Number" maxlength="10" class="call-input">
+						</div>
+						<button type="button" class="callbackbtn" (click)="requestCall()">Request a Call Back</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="pagesupport">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="left-spport">
+					<img src="../../assets/image/recovery-support.png" alt="">
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="right-spport">
+					<h4 class="elderphysio">Importance of Recovery </h4>
+					<p>Following hospital discharge, it takes a considerable time for an aged person to recover and adapt to their
+						usual routine. We customize healthcare plans for long and short-term care to all sorts of conditions like
+						Stroke, spinal cord injuries, cardiac issues, traumatic brain injuries, mental health disorders, and hip and
+						knee replacement issues. We track all health management aspects such as vital checking, post-surgery care,
+						24/7 nursing services and emergency care, daily/routine monitoring, rehabilitation/physiotherapy services,
+						through personalized nursing, medical, and psychological care, and medical expert consultation.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="enroll-h-pragnancy">
+	<div class="container">
+		<div class="main-health">
+			<div class="health-1">
+				<h5>Enroll for
+					<br> Recovery Plan
+				</h5>
+			</div>
+			<div class="health-2">
+				<div class="health-preg-image">
+					<img src="../../assets/image/reenplan-1.png" alt="">
+				</div>
+				<p class="healthdes-para">Behavioral Therapy
+				</p>
+			</div>
+			<div class="health-3">
+				<div class="health-preg-image">
+					<img src="../../assets/image/reenplan-2.png" alt="">
+				</div>
+				<p class="healthdes-para">Balance training</p>
+			</div>
+			<div class="health-4">
+				<div class="health-preg-image">
+					<img src="../../assets/image/reenplan-3.png" alt="">
+				</div>
+				<p class="healthdes-para">Strength training</p>
+			</div>
+			<div class="health-5">
+				<div class="health-preg-image">
+					<img src="../../assets/image/physical-therapy 1.png" alt="">
+				</div>
+				<p class="healthdes-para">Physiotheraphyp>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--planns section-->
+<div class="container">
+	<div class="first-slider">
+		<h3 class="sliderheading">OUR PLANS</h3>
+
+		<swiper [config]="config2" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+			<ng-template swiperSlide>
+				<img src="../../assets/image/replan-1.png" alt="" class="replan-img">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/replan-2.png" alt="" class="replan-img">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/replan-3.png" alt="" class="replan-img">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/replan-4.png" alt="" class="replan-img">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/replan-5.png" alt="" class="replan-img">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/replan-6.png" alt="" class="replan-img">
+			</ng-template>
+		</swiper>
+	</div>
+</div>
+<div class="container">
+	<div class="first-slider">
+		<h3 class="sliderheading">OUR PARTNERS</h3>
+		<swiper [config]="configpartner" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner3.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner4.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/parnter5.svg" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner1.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner6.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+		</swiper>
+	</div>
+</div>
+
+<div class="container">
+	<div class="second-slider">
+		<h3 class="sliderheading">NEWS ROOM</h3>
+		<swiper [config]="confignews" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+			<ng-template swiperSlide>
+				<img src="../../assets/image/eldernew-1.png" alt="" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/eldernew-2.png" alt="" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/eldernew-3.png" alt="" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/eldernew-4.png" alt="" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/eldernew-1.png" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/eldernew-2.png" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/eldernew-3.png" srcset="" class="imgresoiniveslider-news">
+			</ng-template>
+		</swiper>
+	</div>
+</div>
+
+<!--testimonials slider-->
+<div class="container">
+	<div class="first-slider">
+		<h3 class="sliderheadingtest">WHAT OUR CLIENTS SAY ABOUT US</h3>
+		<swiper [config]="configtesti" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Mahesh Yadav</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Friendly Staff</h6>
+					<p class="feed-testi-para">I can't say enough good things about Heka Healthy You—they took such good care of my parents. The staff is extremely friendly and takes the time to learn about your needs and match you with the best caregiver for your parent. We were confident that our parents were in capable, caring hands with them.</p>
+				</div>
+			</ng-template>
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Kritika Kaur</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/blankstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Best elderly care program</h6>
+					<p class="feed-testi-para">I've been using Heka Healthy You for six months and they're fantastic. They are easy to work with and have an amazing staff. My mother-in-caregiver law's genuinely enjoys working with her and is extremely patient and kind. If you require family caregiving, I strongly recommend Heka Healthy You.</p>
+				</div>
+			</ng-template>
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Sneha Bakshi</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/blankstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Excellent Service</h6>
+					<p class="feed-testi-para">I enjoy collaborating with Heka Healthy You. They have excellent caregivers who truly understand and can meet the needs of their clients. The staff is dedicated to their mission and always goes above and beyond.
+
+					</p>
+				</div>
+			</ng-template>
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Mahesh Yadav</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Friendly Staff</h6>
+					<p class="feed-testi-para">I can't say enough good things about Heka Healthy You—they took such good care of my parents. The staff is extremely friendly and takes the time to learn about your needs and match you with the best caregiver for your parent. We were confident that our parents were in capable, caring hands with them.</p>
+				</div>
+			</ng-template>
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Kritika Kaur</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/blankstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Best elderly care program</h6>
+					<p class="feed-testi-para">I've been using Heka Healthy You for six months and they're fantastic. They are easy to work with and have an amazing staff. My mother-in-caregiver law's genuinely enjoys working with her and is extremely patient and kind. If you require family caregiving, I strongly recommend Heka Healthy You.</p>
+				</div>
+			</ng-template>
+			<ng-template swiperSlide>
+				<div class="testimonial-main">
+					<div class="photo-client-main">
+						<div class="photo-client">
+							<img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+						</div>
+						<div class="feed-back">
+							<h6 class="cline-name">Sneha Bakshi</h6>
+							<ul class="rating">
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/feelstar.png" alt=""></li>
+								<li><img src="../../assets/image/blankstar.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<h6 class="feed-testi-heading">Excellent Service</h6>
+					<p class="feed-testi-para">I enjoy collaborating with Heka Healthy You. They have excellent caregivers who truly understand and can meet the needs of their clients. The staff is dedicated to their mission and always goes above and beyond.
+
+					</p>
+				</div>
+			</ng-template>
+		</swiper>
+	</div>
+</div>
+<!--testimonials slider-->

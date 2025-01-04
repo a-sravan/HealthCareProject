@@ -1,0 +1,420 @@
+.wrapper-heading {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 700;
+  color: #000;
+  padding-top: 20px;
+}
+
+.small-cnt-heading {
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 0px 5px 0px;
+  font-weight: 800;
+  margin-top: 30px;
+}
+
+.contact-us-img {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+.commonnameph {
+  height: 30px;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  margin: 5px auto;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #000;
+}
+
+.cnt-name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.commonnamephtarea {
+  height: 80px;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  margin: 5px auto;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #000;
+}
+
+.submitmess-btn{
+  background: #3F6B68;
+    border: none;
+    color: #fff;
+    width: 100px;
+    margin: 10px auto;
+    height: 40px;
+    display: block;
+    border-radius: 10px;
+}
+
+.form-caontainer {
+  width: 210px;
+  position: absolute;
+  top: 400px;
+  left: 45%;
+}
+
+.section-careerwith-us {
+  background: #EBE4C8;
+  border: 3.48px solid #DDD5B7;
+}
+
+.careerimage {
+  margin: auto;
+  display: block;
+  width: 20%;
+  padding: 15px;
+}
+
+.carcv-1 {
+  text-align: center;
+  margin: 7px auto;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.carcv-2 {
+  color: #D71921;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.cvinpit {
+  width: 475px;
+  display: block;
+  margin: 10px auto;
+  height: 50px;
+  padding-left: 20px;
+  color: #000;
+  font-size: 16px;
+  outline: none;
+  font-weight: 500;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+[type=file] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+[type=file]+label {
+  background: #3F6B68;
+  border: 1px solid #3F6B68;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-size: inherit;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 10px 25px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+  width: 150px;
+  text-align: center;
+}
+
+.choosen-heading {
+  font-size: 20px;
+  width: 175px;
+  text-align: center;
+}
+
+[type=file]+label:hover {
+  background-color: #EBE4C8;
+}
+
+[type=file]+label.btn-1 {
+  background-color: #EBE4C8;
+  box-shadow: 0 6px #EBE4C8;
+  transition: none;
+}
+
+[type=file]+label.btn-1:hover {
+  box-shadow: 0 4px #EBE4C8;
+  top: 2px;
+}
+
+.file-choosenr {
+  display: flex;
+  justify-content: flex-start;
+  width: 475px;
+  margin: auto;
+  align-items: center;
+}
+
+.cv-update {
+  width: 550px;
+  margin: 25px auto 25px auto;
+  padding-bottom: 25px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.cvsubmit {
+  width: 250px;
+  height: 45px;
+  background: #3F6B68;
+  border: 1px solid #3F6B68;
+  border-radius: 5px;
+  display: block;
+  margin: 15px auto 0px auto;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+@media(max-width:1199.50px) {
+  .form-caontainer{
+    width: 20%;
+    position: absolute;
+    top: 400px;
+    left: 46%;
+  }
+}
+
+@media(max-width:991.50px) {
+  .contact-us-img {
+    display: block;
+    margin: auto;
+    width: 55%;
+  }
+
+  .commonnameph{
+    height: 30px;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px auto;
+    font-size: 14px;
+    padding-left: 10px;
+    color: #000;
+  }
+
+  .commonnamephtarea {
+    height: 80px;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px auto;
+    font-size: 14px;
+    padding-left: 10px;
+    color: #000;
+  }
+
+}
+
+@media(max-width:767.50px) {
+  .contact-us-img {
+    display: block;
+    margin: auto;
+    width: 85%;
+  }
+
+  .form-caontainer {
+    width: 30%;
+    position: absolute;
+    top: 425px;
+    left: 45%;
+  }
+
+  .choosen-heading {
+    font-size: 13px;
+    width: 97px;
+    text-align: center;
+  }
+
+  [type=file] +label {
+    background: #fff;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Rubik", sans-serif;
+    font-size: inherit;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    outline: none;
+    padding: 1rem 50px;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+    width: 200px;
+    text-align: center;
+  }
+
+  .file-choosenr{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: auto;
+    align-items: center;
+  }
+
+  .cvsubmit {
+    width: 300px;
+    height: 50px;
+    background: #6699FF;
+    border: 1px solid #6699ff;
+    border-radius: 5px;
+    display: block;
+    margin: 15px auto 0px auto;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .cvinpit {
+    width: 300px;
+    display: block;
+    margin: 10px auto;
+    height: 50px;
+    padding-left: 20px;
+    color: #000;
+    font-size: 16px;
+    outline: none;
+    font-weight: 500;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+  }
+
+  .cv-update {
+    width: 425px !important;
+    margin: 35px auto 50px auto;
+    padding-bottom: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  }
+
+  .careerimage {
+    margin: auto;
+    display: block;
+    width: 50%;
+    padding: 25px;
+  }
+}
+
+@media(max-width:650px) {
+  .careerimage {
+    margin: auto;
+    display: block;
+    width: 70%;
+    padding: 25px;
+  }
+}
+
+@media(max-width:475px) {
+  .cv-update{
+    width: 375px !important;
+    margin: 35px auto 50px auto;
+    padding-bottom: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  }
+
+  .carcv-1 {
+    text-align: center;
+    margin: 20px auto;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+@media(max-width:400px) {
+  .cv-update {
+    width: 340px !important;
+    margin: 35px auto 50px auto;
+    padding-bottom: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  }
+}
+
+@media(max-width:350px) {
+  .cv-update {
+    width: 300px !important;
+    margin: 35px auto 50px auto;
+    padding-bottom: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  }
+
+  .cvinpit{
+    width: 275px;
+    display: block;
+    margin: 10px auto;
+    height: 50px;
+    padding-left: 20px;
+    color: #000;
+    font-size: 16px;
+    outline: none;
+    font-weight: 500;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+  }
+
+  [type=file] +label {
+    background: #fff;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Rubik", sans-serif;
+    font-size: inherit;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    outline: none;
+    padding: 1rem 40px;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+    width: 175px;
+    text-align: center;
+  }
+
+  .file-choosenr {
+    display: flex;
+    justify-content: space-between;
+    width: 275px;
+    margin: auto;
+    align-items: center;
+  }
+
+  .cvsubmit {
+    width: 275px;
+    height: 50px;
+    background: #6699FF;
+    border: 1px solid #6699ff;
+    border-radius: 5px;
+    display: block;
+    margin: 15px auto 0px auto;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,250 @@
+<div class="container-fluid" style="padding: 0;">
+    <div class="header-banner">
+        <!-- <div class="header-text">
+            ABOUT US
+        </div> -->
+    </div>
+
+</div>
+<div class="about-us-main-container">
+    <div style="margin-bottom: 40px;">
+        <h6 class="h-six-design">OUR MISSION</h6>
+        <p class="para-srv-design">At Heka, We ensure Homecare is more Personalized and Premium, by leveraging
+            technology for better patient outcomes.</p>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+        <h6 class="h-six-design">OUR VISION</h6>
+        <p class="para-srv-design">To be compassionate service provider, caring for people and advancing health and
+            wellbeing.</p>
+        <p class="para-srv-design">By integrating technology, artificial intelligence and deep learning algorithms for
+            better health-care
+            delivery and push preventive over curative healthcare, we strive to make our contributions more noteworthy.
+        </p>
+        <p class="para-srv-design">We are building a connected care ecosystem, using IoT enabled devices, which helps
+            with chronic disease management
+            and emergency care while ensuring routine care by hospitals and clinicians, at the touch of a button.</p>
+    </div>
+
+    <h5 class="h-five-design">At Heka Healthy You, We help our patrons lead healthier lives in their homes.</h5>
+    <p>If you or a loved one is recovering from an illness, looking for transitioning from a hospital to home, or in
+        need of specialized treatment, our knowledgeable and skilled staff are here to continue your care.</p>
+
+    <h5 class="h-five-design" style="color: #363841;margin-top: 30px;">OUR FOCUS IS ON HELPING YOU TO GET WELL & REGAIN
+    </h5>
+
+    <ul class="srv-under-list">
+        <li><img src="../../assets/image/about-1sd.png" alt=""></li>
+        <li><img src="../../assets/image/about-2sd.png" alt=""></li>
+        <li><img src="../../assets/image/about-3sd.png" alt=""></li>
+        <li><img src="../../assets/image/about-4sd.png" alt=""></li>
+    </ul>
+
+    <p class="para-srv-design" style="color: #363841;">Home healthcare is becoming a significant element in the value
+        chain of healthcare services.</p>
+    <p class="para-srv-design" style="color: #363841;">With the growing concerns around the quality of institutionalized
+        care, family caregivers are demanding worthwhile
+        solutions to provide care for their loved ones.</p>
+    <p class="para-srv-design" style="color: #363841;">Higher levels of perceived stress, social isolation, lack of
+        work-life balance, and negative impact on the emotional
+        well-being of the family caregivers are some of the factors that are contributing to the growing demand for home
+        care.</p>
+    <p class="para-srv-design" style="color: #363841;">We provide a comprehensive continuum of care with specialized
+        Doctors, Physiotherapists, Nursing specialists,
+        Diagnostics services, Medicines, and trained attendants for your unique medical needs, all within the comfort of
+        your
+        home.</p>
+</div>
+
+<section class="aboutheckchoose" style="background-color: #3F6B68;">
+    <div class="container">
+        <h2 class="whyheakheading">WHY CHOOSE HEKA HEALTHY YOU?</h2>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="whychoseheka">
+                    <div class="whyheka-1">
+                        <img src="../../assets/image/whyaboutheka-1.png" alt="" class="whynumbering-image">
+                    </div>
+                    <div class="divider-why"></div>
+                    <div class="whyheka-2">
+                        <img src="../../assets/image/whyaboutheka-2.png" alt="" class="whynumbering-image">
+                    </div>
+                </div>
+
+                <div class="whychoseheka">
+                    <div class="whyheka-3">
+                        <img src="../../assets/image/whyaboutheka-3.png" alt="" class="whynumbering-image">
+                    </div>
+                    <div class="divider-why"></div>
+                    <div class="whyheka-4">
+                        <img src="../../assets/image/whyaboutheka-4.png" alt="" class="whynumbering-image">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="first-slider">
+        <h3 class="sliderheading">OUR PARTNERS/ CLIENTS</h3>
+        <swiper [config]="configpartner" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+            <ng-template swiperSlide>
+                <img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+            </ng-template>
+            <ng-template swiperSlide>
+                <img src="../../assets/image/partner3.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+            </ng-template>
+            <ng-template swiperSlide>
+                <img src="../../assets/image/partner4.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+            </ng-template>
+            <ng-template swiperSlide>
+                <img src="../../assets/image/parnter5.svg" srcset="" class="imgresoiniveslider-partner">
+            </ng-template>
+            <ng-template swiperSlide>
+                <img src="../../assets/image/partner1.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+            </ng-template>
+            <ng-template swiperSlide>
+                <img src="../../assets/image/partner6.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+            </ng-template>
+            <ng-template swiperSlide>
+                <img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+            </ng-template>
+        </swiper>
+    </div>
+</div>
+
+<!--testimonials slider-->
+<div class="container">
+    <div class="first-slider">
+        <h3 class="sliderheadingtest">WHAT OUR CLIENTS SAY ABOUT US</h3>
+
+        <swiper [config]="config" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+            <ng-template swiperSlide>
+                <div class="testimonial-main">
+                    <div class="photo-client-main">
+                        <div class="photo-client">
+                            <img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+                        </div>
+                        <div class="feed-back">
+                            <h6 class="cline-name">Pawan Joshi</h6>
+                            <ul class="rating">
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h6 class="feed-testi-heading">Amazing Service</h6>
+                    <p class="feed-testi-para">My sample was collected on time, and the phlebotomist who came to my
+                        house took all necessary safety precautions. The customer service representative was also
+                        well-trained to answer my questions. I'm very pleased with the overall outcome.
+                    </p>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="testimonial-main">
+                    <div class="photo-client-main">
+                        <div class="photo-client">
+                            <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+                        </div>
+                        <div class="feed-back">
+                            <h6 class="cline-name">Ritika Kaur</h6>
+                            <ul class="rating">
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h6 class="feed-testi-heading">Best prenatal care program</h6>
+                    <p class="feed-testi-para">When I first found out that I was pregnant I was surprised, but also a
+                        little bit clueless to the whole new world that I would embark on. I was into 15 week of
+                        pregnancy & never practiced yoga before. Heka yoga experts has the perfect knowledge of
+                        pregnancy yoga. Thank you for creating a program like this.
+                    </p>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="testimonial-main">
+                    <div class="photo-client-main">
+                        <div class="photo-client">
+                            <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+                        </div>
+                        <div class="feed-back">
+                            <h6 class="cline-name">Aarohi Gupta</h6>
+                            <ul class="rating">
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h6 class="feed-testi-heading">Simple & Convenient</h6>
+                    <p class="feed-testi-para">Amazingly simple and convenient. Excellent service for the same price as
+                        a clinic visit, without the hassle of having to drive to the doctor's clinic. I couldn't be more
+                        pleased.
+                    </p>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="testimonial-main">
+                    <div class="photo-client-main">
+                        <div class="photo-client">
+                            <img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+                        </div>
+                        <div class="feed-back">
+                            <h6 class="cline-name">Pawan Joshi</h6>
+                            <ul class="rating">
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h6 class="feed-testi-heading">Amazing Service</h6>
+                    <p class="feed-testi-para">My sample was collected on time, and the phlebotomist who came to my
+                        house took all necessary safety precautions. The customer service representative was also
+                        well-trained to answer my questions. I'm very pleased with the overall outcome.
+                    </p>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="testimonial-main">
+                    <div class="photo-client-main">
+                        <div class="photo-client">
+                            <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+                        </div>
+                        <div class="feed-back">
+                            <h6 class="cline-name">Ritika Kaur</h6>
+                            <ul class="rating">
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h6 class="feed-testi-heading">Best prenatal care program</h6>
+                    <p class="feed-testi-para">When I first found out that I was pregnant I was surprised, but also a
+                        little bit clueless to the whole new world that I would embark on. I was into 15 week of
+                        pregnancy & never practiced yoga before. Heka yoga experts has the perfect knowledge of
+                        pregnancy yoga. Thank you for creating a program like this.
+                    </p>
+                </div>
+            </ng-template>
+        </swiper>
+    </div>
+</div>
+<!--testimonials slider-->
