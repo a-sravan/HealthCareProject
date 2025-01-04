@@ -1,0 +1,524 @@
+
+<section class="parentalcontent">
+	<div class="container">
+		<div class="row paren-row">
+			<div class="col-md-6">
+				<div class="left-parental">
+					<h4 class="parental-heading">Parental Care</h4>
+					<ul class="parental-list">
+						<li><span><img class="sign-img" src="../../assets/image/signnew.svg" alt=""></span> Metal & Physical Health
+							during pregnancy</li>
+						<li><span><img class="sign-img" src="../../assets/image/signnew.svg" alt=""></span> Diet & Nutrition -
+							Gestational Diabetes & Anemia</li>
+						<li><span><img class="sign-img" src="../../assets/image/signnew.svg" alt=""></span> Testing & Screening for
+							mother & baby</li>
+						<li><span><img class="sign-img" src="../../assets/image/signnew.svg" alt=""></span> Garbh sanskar / spritual
+							care for mother</li>
+						<li><span><img class="sign-img" src="../../assets/image/signnew.svg" alt=""></span> Mental Preparedness’ for
+							labor and delivery</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="right-parental">
+					<div class="req-call-div">
+						<h6 class="call-back-heading">Let's Talk</h6>
+						<div>
+							<input type="text" [(ngModel)]="callInfo.name" placeholder="Name" class="call-input" maxlength="26">
+						</div>
+						<div>
+							<input type="email" [(ngModel)]="callInfo.email" placeholder="Email" class="call-input">
+						</div>
+						<div>
+							<input type="text" [(ngModel)]="callInfo.mobile" placeholder="Input Phone Number" maxlength="10" class="call-input">
+						</div>
+						<button type="button" class="callbackbtn" (click)="requestCall()">Request a Call Back</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="enroll-h-pragnancy">
+	<div class="container">
+		<div class="main-health">
+			<div class="health-1">
+				<h5>Enroll for Healthy <br> Pregnancy</h5>
+			</div>
+			<div class="health-2">
+				<div class="health-preg-image">
+					<img src="../../assets/image/preg-common-natural.svg" alt="">
+				</div>
+				<p class="healthdes-para">Help in Natural
+					<br> Conception
+				</p>
+			</div>
+			<div class="health-3">
+				<div class="health-preg-image">
+					<img src="../../assets/image/regaining.svg" alt="">
+				</div>
+				<p class="healthdes-para">Regaining Pre <br>
+					Pregnancy Care</p>
+			</div>
+			<div class="health-4">
+				<div class="health-preg-image">
+					<img src="../../assets/image/pre-common-help.svg" alt="">
+				</div>
+				<p class="healthdes-para">Help with Back Pain</p>
+			</div>
+			<div class="health-5">
+				<div class="health-preg-image">
+					<img src="../../assets/image/precommon-ext.svg" alt="">
+				</div>
+				<p class="healthdes-para">Exhaustion</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--planns section-->
+<div class="main-plan">
+	<h4 class="sliderheading">PLANS</h4>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="plan-slider">
+					<div class="plan-heading">
+						<h4>3 Month Plan</h4>
+					</div>
+					<div class="selectplainlist-main">
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Dedicated Care manager</p>
+							</div>
+							<div class="right-detail">
+								<p></p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Couple Counselling</p>
+							</div>
+							<div class="right-detail">
+								<p>2</p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Prenatal Yoga Sessions</p>
+							</div>
+							<div class="right-detail">
+								<p>12</p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Discount on Lab Test</p>
+							</div>
+							<div class="right-detail">
+								<p>10%</p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Nutrition Counselling</p>
+							</div>
+							<div class="right-detail">
+								<p></p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+
+								<p style="color:#000; font-weight:700;margin-top:48px;">Total Sessions</p>
+							</div>
+							<div class="right-detail">
+								<p></p>
+								<p style="color:#000; font-weight:700;margin-top:48px;">14</p>
+							</div>
+						</div>
+					</div>
+					<button class="selecpra-button" routerLink="/pregnancy-first-plan"
+						(click)="change_route('pregnancy-first-plan')">Select Plan</button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="plan-slider">
+					<div class="plan-heading">
+						<h4>6 Month Plan</h4>
+					</div>
+					<div class="selectplainlist-main">
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Dedicated Care manager</p>
+							</div>
+							<div class="right-detail">
+								<p></p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Couple Counselling</p>
+							</div>
+							<div class="right-detail">
+								<p>04</p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Garbhsanskar Sessions</p>
+							</div>
+							<div class="right-detail">
+								<p>02</p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Prenatal Yoga Sessions</p>
+							</div>
+							<div class="right-detail">
+								<p>12</p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Discount on Lab Test</p>
+							</div>
+							<div class="right-detail">
+								<p>10%</p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Nutrition Counselling</p>
+							</div>
+							<div class="right-detail">
+								<p></p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>General Counselling</p>
+							</div>
+							<div class="right-detail">
+								<p>02</p>
+							</div>
+						</div>
+						
+						<div class="plan-detail">
+							<div class="left-detail">
+
+								<p style="color:#000; font-weight:700;margin-top:15px;">Total Sessions</p>
+							</div>
+							<div class="right-detail">
+								<p></p>
+								<p style="color:#000; font-weight:700;margin-top:15px;">18</p>
+							</div>
+						</div>
+					</div>
+					<button class="selecpra-button" routerLink="/pregnancy-second-plan"
+						(click)="change_route('pregnancy-second-plan')">Select Plan</button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="plan-slider">
+					<div class="plan-heading">
+						<h4>9 Month Plan</h4>
+					</div>
+					<div class="selectplainlist-main">
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Dedicated Care manager</p>
+							</div>
+							<div class="right-detail">
+								<p></p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Couple Counselling</p>
+							</div>
+							<div class="right-detail">
+								<p>06</p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Prenatal Yoga Sessions</p>
+							</div>
+							<div class="right-detail">
+								<p>24</p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Discount on Lab Test</p>
+							</div>
+							<div class="right-detail">
+								<p>20%</p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Nutrition Counselling</p>
+							</div>
+							<div class="right-detail">
+								<p></p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>Dental Check-up</p>
+							</div>
+							<div class="right-detail">
+								<p>04</p>
+							</div>
+						</div>
+						<div class="plan-detail">
+							<div class="left-detail">
+								<p><span class="bullet"></span>General Counselling</p>
+							</div>
+							<div class="right-detail">
+								<p>04</p>
+							</div>
+						</div>
+						
+						<div class="plan-detail">
+							<div class="left-detail">
+
+								<p style="color:#000; font-weight:700;margin-top:15px;">Total Sessions</p>
+							</div>
+							<div class="right-detail">
+								<p></p>
+								<p style="color:#000; font-weight:700;margin-top:15px;">34</p>
+							</div>
+						</div>
+					</div>
+					<button class="selecpra-button" routerLink="/pregnancy-third-plan"
+						(click)="change_route('pregnancy-third-plan')">Select Plan</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="first-slider">
+		<h3 class="sliderheading">OUR PARTNERS</h3>
+		<swiper [config]="configpartner" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner3.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner4.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/parnter5.svg" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner1.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner6.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+			<ng-template swiperSlide>
+				<img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+			</ng-template>
+		</swiper>
+	</div>
+</div>
+
+<div class="container">
+  <div class="second-slider">
+    <h3 class="sliderheading">NEWS ROOM</h3>
+    <swiper [config]="confignews" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <img src="../../assets/image/pregnews-1.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/pregnews-2.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/pregnews-3.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/pregnews-4.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/pregnews-5.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/pregnews-6.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/pregnews-7.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+    </swiper>
+  </div>
+</div>
+
+<!--testimonials slider-->
+<div class="container">
+  <div class="first-slider">
+    <h3 class="sliderheadingtest">WHAT OUR CLIENTS SAY ABOUT US</h3>
+    <swiper [config]="config" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Kailash Yadav</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Best post pregnancy plan</h6>
+          <p class="feed-testi-para">“We have learned so much about parenting in this program. It is a skill that does
+            not always come naturally. It is very important to understand baby’s cues and provide what they need as
+            parents.” Heka helps alot to understand and learn about parenting . I would recommend this program to anyone
+            who is expecting a baby or parenting a young child. </p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Ritika Kaur</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Best prenatal care program</h6>
+          <p class="feed-testi-para">When I first found out that I was pregnant I was surprised, but also a little bit clueless to the whole new
+            world that I would embark on.
+          </p>
+          <p class="feed-testi-para">I was into 15 week of pregnancy & never practiced yoga before. Heka yoga experts has the perfect knowledge of
+            pregnancy yoga.</p>
+          <p class="feed-testi-para">Thank you for creating a program like this.</p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Sonakshi Bakshi</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Expert Dietician</h6>
+          <p class="feed-testi-para">I am into 3rd  month of pregnancy . I was confused about what to eat and what not. 
+            Then I came in contact with Heka Health You. Their dietician expert helped me a lot.
+            They are very welcoming, kind, and make sure you are prepared for the unknown.
+             
+          </p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Kailash Yadav</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Best post pregnancy plan</h6>
+          <p class="feed-testi-para">“We have learned so much about parenting in this program. It is a skill that does
+            not always come naturally. It is very important to understand baby’s cues and provide what they need as
+            parents.” Heka helps alot to understand and learn about parenting . I would recommend this program to anyone
+            who is expecting a baby or parenting a young child. </p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Ritika Kaur</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Best prenatal care program</h6>
+          <p class="feed-testi-para">When I first found out that I was pregnant I was surprised, but also a little bit clueless to the whole new
+            world that I would embark on.
+          </p>
+          <p class="feed-testi-para">I was into 15 week of pregnancy & never practiced yoga before. Heka yoga experts has the perfect knowledge of
+            pregnancy yoga.</p>
+          <p class="feed-testi-para">Thank you for creating a program like this.</p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Sonakshi Bakshi</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Expert Dietician</h6>
+          <p class="feed-testi-para">I am into 3rd  month of pregnancy . I was confused about what to eat and what not. 
+            Then I came in contact with Heka Health You. Their dietician expert helped me a lot.
+            They are very welcoming, kind, and make sure you are prepared for the unknown.
+             
+          </p>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+</div>
+<!--testimonials slider-->
+

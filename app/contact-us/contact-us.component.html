@@ -1,0 +1,53 @@
+<h2 class="wrapper-heading">Contact Us</h2>
+<img src="../../assets/image/conatctus-banner.png" alt="" class="contact-us-img">
+<div class="form-caontainer">
+	<h6 class="small-cnt-heading">Contact Us</h6>
+	<div class="cnt-name">
+		<input type="text" [(ngModel)]="callInfo.name" class="commonnameph" placeholder="Name" maxlength="26">
+	</div>
+	<div class="cnt-name">
+		<input type="text" [(ngModel)]="callInfo.mobile" class="commonnameph" placeholder="Phone Number" maxlength="10">
+	</div>
+	<div class="cnt-name">
+		<textarea cols="40" rows="3" [(ngModel)]="callInfo.message" class="commonnamephtarea"
+			placeholder="Messages..."></textarea>
+	</div>
+
+	<div><button type="button" (click) ="submitform()" class="submitmess-btn">Send</button></div>
+
+</div>
+
+<div class="section-careerwith-us">
+	<div>
+		<h2 class="wrapper-heading">Career with Us</h2>
+		<img src="../../assets/image/carrer-banner.png" class="careerimage">
+	</div>
+</div>
+
+<div class="careercv-section">
+	<div class="container">
+		<div class="cv-update">
+			<h4 class="carcv-1">If you think you’ll fit right in,</h4>
+			<h3 class="carcv-2">Join The Team</h3>
+
+			<div>
+				<input type="text" [(ngModel)]="careerInfo.name" placeholder="Full Name" class="cvinpit" maxlength="26">
+			</div>
+			<div>
+				<input type="text" [(ngModel)]="careerInfo.mobile" placeholder="Mobile Number" maxlength="10" class="cvinpit">
+			</div>
+			<div>
+				<input type="email" [(ngModel)]="careerInfo.email" placeholder="Email" class="cvinpit">
+			</div>
+			<div>
+				<input type="text" [(ngModel)]="careerInfo.linkedInUrl" placeholder="LinkedIn Profile URL" class="cvinpit">
+			</div>
+			<div class="file-choosenr">
+				<input type="file" id="file" accept="pdf" />
+				<label for="file">Add File <span><img src="../../assets/image/upload.png" alt="" style="height: 20px;"></span></label>
+				<!-- <h5 class="choosen-heading">No Choosen File</h5> -->
+			</div>
+			<button type="button" class="cvsubmit" (click) ="careerSubmit()">Apply</button>
+		</div>
+	</div>
+</div>

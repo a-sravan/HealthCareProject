@@ -1,0 +1,333 @@
+<div class="container-fluid" style="padding: 0;">
+	<div class="header-banner">
+		<div class="overlay">
+			<div class="header-text">
+				Pregnancy Care
+				<br>
+				<p class="header-para">FIND THE PERFECT CAREGIVER <br>
+					FOR YOUR LOVED ONE</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container video-container">
+  <div class="row cst-video">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="bls-video-sec">
+        <div class="video-image">
+          <img src="../../assets/image/pregnancy-video.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+<!--tab section of bls-->
+<div class="container">
+  <div class="row cst-paregnacy-row">
+    <div class="col-md-6">
+      <div class="cst-tabmain">
+        <div class="blstraing-enqi">
+          <div class="bls-sb-heading">Pregnancy Care</div>
+          <div><button class="blsenquirys" (click)="openEnquiry()">Enquiry</button></div>
+        </div>
+        <div class="tab-bar">
+          <ul class="med-astroul">
+            <li style="margin-top:0px;" (click)="tabslider(1)" [ngClass]="{'tab-active':tabId === 1}">
+              Introduction</li>
+            <li (click)="tabslider(2)" [ngClass]="{'tab-active':tabId === 2}">Why Choose Us</li>
+            <li (click)="tabslider(3)" [ngClass]="{'tab-active':tabId === 3}">Service Information</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="tab-content-right">
+        <div class="show-hide">
+          <div class="container-val" *ngIf="tabId === 1">
+            <ul class="introlist">
+              <li class="prag-font"><span style="color:#D71921;">“HEALTHY YOU”</span> is our Passion </li>
+              <li>
+                <div><img src="../../assets/image/pra11.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Experienced Doctors and Lamaze experts</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/pra12.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Catch potential concerns early</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/pra13.svg" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Reduces the risk of pregnancy and birth complications</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/pr14.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Personalized health & lifestyle programs</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="container-val" *ngIf="tabId=== 2">
+            <ul class="introlistp-2">
+              <li class="prag-font-2">We understand that every pregnancy is
+                DIFFERENT yet SPECIAL</li>
+              <li>
+                <div><img src="../../assets/image/pgc-1.svg" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents-1"> Planning for natural conception</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/pgc-2.svg" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents-1"> Early Pregnancy Care</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/pgc-3.svg" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents-1">High risk Pregnancy</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/pgc-4.svg" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents-1">Prenatal Diagnosis / Neonatal Care</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/pgc-5.svg" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents-1">Post Partum Care</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="container-val" *ngIf="tabId===3">
+            <swiper [config]="configtabslider" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+              <ng-template swiperSlide>
+                <div class="plan-slider">
+                  <div class="plan-heading">
+                    <h4>3 Month Plan</h4>
+                  </div>
+                  
+                  <div class="plan-detail">
+                    <div class="left-detail">
+                      <p>Couple Counselling</p>
+                      <p>Prenatal Yoga Sessions</p>
+                      <p>Discount on Lab Test</p>
+                      <p>Dedicated Care manager </p>
+                      <p style="color:#000; font-weight:700;margin-top:15px;">Total Sessions</p>
+                    </div>
+                    <div class="right-detail">
+                      <p>2</p>
+                      <p>12</p>
+                      <p>10%</p>
+                      <p>-</p>
+                      <p style="color:#000; font-weight:700;margin-top:15px;">14</p>
+                    </div>
+                  </div>
+                  <button class="selecpra-button" routerLink="/pregnancy-first-plan">Select Plan</button>
+                </div>
+              </ng-template>
+              <ng-template swiperSlide>
+                <div class="plan-slider">
+                  <div class="plan-heading">
+                    <h4>6 Month Plan</h4>
+                  </div>
+                  <div class="plan-detail">
+                    <div class="left-detail">
+                      <p>Couple Counselling</p>
+                      <p>Garbhsanskar Sessions</p>
+                      <p>Prenatal Yoga Sessions</p>
+                      <p>Discount on Lab Test</p>
+                      <p>Dedicated Care manager </p>
+                      <p style="color:#000; font-weight:700;margin-top:15px;">Total Sessions</p>
+                    </div>
+                    <div class="right-detail">
+                      <p>4</p>
+                      <p>2</p>
+                      <p>10%</p>
+                      <p>12</p>
+                      <p>-</p>
+                      <p style="color:#000; font-weight:700;margin-top:15px;">18</p>
+                    </div>
+                  </div>
+                  <button class="selecpra-button" routerLink="/pregnancy-second-plan">Select Plan</button>
+                </div>
+              </ng-template>
+              <ng-template swiperSlide>
+                <div class="plan-slider">
+                  <div class="plan-heading">
+                    <h4>1 Year Plan</h4>
+                  </div>
+                  <div class="plan-detail">
+                    <div class="left-detail">
+                      <p>Couple Councelling</p>
+                      <p>Prenatal Yoga Sessions</p>
+                      <p>Discount on Lab Test</p>
+                      <p>Dedicated Care manager</p>
+                      <p style="color:#000; font-weight:700;margin-top:15px;">Total Sessions</p>
+                    </div>
+                    <div class="right-detail">
+                      <p>06</p>
+                      <p>24</p>
+                      <p>20%</p>
+                      <p>-</p>
+                      <p style="color:#000; font-weight:700;margin-top:15px;">30</p>
+                    </div>
+                  </div>
+                  <button class="selecpra-button" routerLink="/pregnancy-third-plan">Select Plan</button>
+                </div>
+              </ng-template>
+            </swiper> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="how-we-work">
+  <div class="container">
+    <img src="../../assets/image/howwework.svg" alt="" class="how-workimg">
+  </div>
+</section>
+<section style="border-bottom: 2px solid #60A9EE;">
+	<div class="container">
+		<div class="faq-wrapper">
+			<div class="faq-wrapper-1">
+				<h3>Got <br>Questions?</h3>
+				<h5>We’d love to answer them !</h5>
+				<div class="viewf-aq">
+					<a href routerLink="/pregnancy-care-faq">View FAQ</a>
+				</div>
+			</div>
+			<div class="faq-wrapper-2">
+				<img src="../../assets/image/faqbanner.png" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+<section class="ourplan">
+  <div class="container">
+    <h4 class="op-main-heading">OUR PLANS</h4>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="plan-main" routerLink="/parental-care">
+          <img src="../../assets/image/parental-banner.svg" alt="" class="oplan-image">
+          <h5 class="plan-main-h5">Parental Care</h5>
+          <p class="plan-main-p">Getting regular Prenatal Care,ensures that you and baby are healthy, as expected.</p>
+          <p class="plan-main-p">Regular care, support on nutrition, fitness and emotional well being helps to catch
+            potential concerns early
+            and reduces any further health & birth complications.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="plan-main" routerLink="/post-pregnancy">
+          <img src="../../assets/image/post-pregnancy.svg" alt="" class="oplan-image">
+          <h5 class="plan-main-h5">Post Pregnancy</h5>
+          <p class="plan-main-p">Effective health care for a new mother is an important and continuing process that
+            begins right immediately after the delivery and extends to months of postpartum care tailored to the needs
+            of the mother and baby.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="plan-main" routerLink="/continuum-care">
+          <img src="../../assets/image/continnum.svg" alt="" class="oplan-image">
+          <h5 class="plan-main-h5">Continuum care</h5>
+          <p class="plan-main-p" style="font-size: 9px;">Holding a baby is euphoric for new parents.
+            A Mother undergoes drastic change mentally and physically during pregnancy and childbirth.
+            We outlay our plans in such a way that supports rebuilding and regaining the strength. Emotional wellness,
+            post partum depression, lactation issues etc are few concerns that any new momy seeks answers to. Reach out
+            to our experts to get bespoke tailored solutions that make sure the mother receives utmost care, attention
+            and rest to recover. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div class="first-slider">
+    <h3 class="sliderheading">OUR PARTNERS/ CLIENTS</h3>
+    <swiper [config]="configpartner" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner3.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner4.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/parnter5.svg" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner1.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner6.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+    </swiper> 
+  </div>
+</div>
+<div class="container">
+  <div class="second-slider">
+    <h3 class="sliderheading">NEWS ROOM</h3>
+    <swiper [config]="confignews" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <img src="../../assets/image/news1.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/news2.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/news3.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/news4.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/news1.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/news2.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+    </swiper>
+  </div>
+</div>
+<div class="container">
+  <div class="second-slider">
+    <h3 class="sliderheading">GALLERY</h3>
+    <swiper [config]="configgallery" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <img src="../../assets/image/gallery1.png" alt="" srcset="" class="galleryimgresoiniveslider">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/gallery2.png" alt="" srcset="" class="galleryimgresoiniveslider">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/gallery3.png" alt="" srcset="" class="galleryimgresoiniveslider">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/gallery4.png" alt="" srcset="" class="galleryimgresoiniveslider">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/gallery1.png" srcset="" class="galleryimgresoiniveslider">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/gallery2.png" alt="" srcset="" class="galleryimgresoiniveslider">
+      </ng-template>
+    </swiper> 
+  </div>
+</div>

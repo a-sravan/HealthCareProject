@@ -1,0 +1,239 @@
+.header-banner {
+    background-image: url("../../assets/image/aboutus-banner.png");
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-text {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgb(26 26 26);
+    font-size: 45px;
+    font-weight: bold;
+    align-items: center;
+    align-self: center;
+}
+
+.home-tab {
+    text-shadow: 1px 1px 1px rgb(148 137 137);
+    font-size: 25px;
+    padding-top: 10px;
+    align-items: center;
+    font-weight: bold;
+    display: block;
+    margin:20px auto;
+    width: 80%;
+}
+
+.about-us-main-container{
+    margin: 20px auto 50px auto;
+    display: block;
+    width: 80%;
+}
+
+.cst-tabmain {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.h-six-design{
+    margin: 15px 0px 20px 0px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #3F6B68;
+    text-align: center;
+}
+
+.para-srv-design{
+    margin: 15px 0;
+    font-size: 17px;
+    font-weight: 500;
+    color:#252222;
+}
+
+.h-five-design{
+    font-size: 23px;
+    font-weight: 800;
+    margin: 20px 0;
+    color: #3F6B68;
+}
+
+.srv-under-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    list-style-position: inside;
+}
+
+.srv-under-list li img{
+    width: 75%;
+    display: block;
+    margin: 30px auto;
+}
+
+/* .srv-under-list li{
+    margin: 15px 0;
+    font-size: 17px;
+    font-weight: 500;
+    color:#252222;
+}
+
+.srv-under-list-disc{
+    list-style: inside;
+} */
+
+/* .srv-under-list-disc li{
+    margin: 15px 0;
+    font-size: 17px;
+    font-weight: 500;
+    color:#252222; 
+} */
+
+.aboutheckchoose{
+    background-color: #3F6B68;
+    padding: 40px 0px;
+}
+
+.whyheakheading{
+    color: #CCB869;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+.whychoseheka{
+    display:flex;
+    justify-content: center;
+}
+
+.whynumbering-image{
+    width: 285px;
+    padding: 50px;
+}
+
+.divider-why{
+    width: 10px;
+    background-color: #477C79;
+}
+.whyheka-1{
+    border-bottom: 5px solid #477C79;
+}
+
+.whyheka-2{
+    border-bottom: 5px solid #477C79;
+}
+.whyheka-3{
+    border-top: 5px solid #477C79;
+}
+.whyheka-4{
+    border-top: 5px solid #477C79;
+}
+.sliderheading{
+    margin-top: 60px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .imgresoiniveslider-partner{
+    width: 70%;
+    display: block;
+    margin: 20px auto 35px auto;
+  }
+@media(min-width:1441px){
+    .header-banner {
+        background-image: url("../../assets/image/aboutus-banner.png");
+        height: 360px;
+        display: flex;
+        justify-content: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media(max-width:1400px){
+    .header-banner {
+        background-image: url("../../assets/image/aboutus-banner.png");
+        height: 360px;
+        display: flex;
+        justify-content: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+/*testimonials heading*/
+.testimonial-main{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 7%);
+    border-radius: 12px;
+    width: 250px;
+    margin: 0px auto 40px auto;
+    padding: 15px;
+    height: 290px;
+}
+.feed-testi-heading{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+.feed-testi-para{
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.rating{
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.healthdes-para{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.client-pic{
+    box-shadow: 0px 3px 10px #ccc;
+    border-radius: 50%;
+    height: 40px;
+}
+
+.cline-name{
+    margin-bottom: 0px;
+}
+
+.photo-client-main{
+    display: flex;
+    gap: 10px;
+}
+
+.sliderheadingtest{
+    margin-top: 60px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+ /* .swiper-slide-active{
+    background-color: red !important;
+} */
+
+/* .swiper-button-prev::after .swiper-rtl .swiper-button-next::after {
+    content: 'prev';
+    font-size: 18px !important;
+    font-weight: bold;
+    color: #000;
+} */

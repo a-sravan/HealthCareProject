@@ -1,0 +1,53 @@
+a:hover{
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+.main-service-box {
+  display: flex;
+  margin: 40px 0px 0px 0px;
+  flex-wrap: wrap;
+  justify-content: center !important;
+}
+  
+  .service-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    cursor: pointer;
+    margin: 20px 10px;
+    border-top-left-radius: 18px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 200px;
+}
+  
+  .service-box:hover{
+    transition: all 1s;
+    opacity: 0.85;
+    transform: scale(1.04);
+  
+  }
+  
+  .service-box img{
+    width: 100%;
+  }
+  
+  .service-box h4{
+    text-align: center;
+    font-size: 13px !important;
+    width: 95%;
+    color: #000;
+    padding: 10px;
+    font-weight: 600;
+  }
+  .second-rowsrv{
+    margin-bottom: 50px;
+  }
+
+  /*service section css end*/

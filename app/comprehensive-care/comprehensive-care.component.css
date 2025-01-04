@@ -1,0 +1,139 @@
+
+.review-start{
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 17px;
+  padding-left: 0px;
+}
+.review-start li{
+  padding: 0px 3px;
+}
+.review-start li:nth-child(1){
+  padding-left: 0px;
+}
+.main-paln{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0px 30px 0px;
+}
+.left-pan{
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+.left-pan img{
+  display: block;
+  margin-left: auto;
+  margin-right: 100px;
+  margin-top: 10px;
+  height: 175px;
+}
+.right-pan h5{
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #000;
+}
+.right-pan h6{
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #000;
+}
+.right-pan{
+  width: 50%;
+  display: block;
+  margin-left: 50px;
+}
+.right-pan p{
+  width: 65%;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+hr:not([size]) {
+  height: 1px;
+  width: 30%;
+  margin: 20px 0px 9px 0px;
+}
+.plan-signup{
+  border: 1px solid #3f6b68;
+  background: #3f6b68;
+  color: #fff;
+  padding: 5px 30px;
+  text-align: center;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.request-call{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1055;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+.sub-req-contetn{
+  background-color: rgba(0,0,0,.2);
+  box-shadow: 0px 8px 10px 10px rgb(130 130 130 / 40%);
+  padding: 20px 0px !important;
+  height: 100%;
+}
+.close-bnt{
+  margin-left: auto;
+  display: block;
+  background-color: transparent;
+  outline: none;
+  color: #000;
+  margin-bottom: 10px;
+  border: none;
+  font-weight: 700;
+  font-size: 25px;
+}
+.req-call-content{
+  display: block;
+  margin: auto;
+  width: 320px;
+  background-color: #fff;
+  padding: 25px;
+  margin-top: 80px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.reqcall-input{
+  width: 270px;
+  margin: 0px auto 10px auto;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  color: #000;
+  height: 40px;
+}
+
+.lets-talk{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lets-talk h6{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.reqcall-btn{
+  width: 270px;
+  margin: 0px auto 10px auto;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #3f6b68;
+  background-color: #3f6b68;
+  padding-left: 10px;
+  color: #fff;
+  height: 40px;
+}

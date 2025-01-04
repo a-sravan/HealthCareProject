@@ -1,0 +1,484 @@
+.parental-list {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  .parentalcontent {
+    margin: 30px 0px 50px 0px;
+  }
+  
+  .sign-img {
+    height: 13px;
+    margin-right: 5px;
+  }
+  
+  .parental-list li {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .parental-heading {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .req-call-div {
+    width: 75%;
+    height: 250px;
+    background: #ffffff;
+    border: 3.13208px solid #000000;
+    box-shadow: 0px 12.5283px 12.5283px rgb(0 0 0 / 25%),
+      0px 12.5283px 12.5283px rgb(0 0 0 / 25%),
+      0px 12.5283px 12.5283px rgb(0 0 0 / 25%);
+    border-radius: 59.5094px;
+  }
+  .parent-img {
+    width: 390px;
+  }
+  .paren-row {
+    align-items: center;
+  }
+  
+  .parent-img img {
+    display: block;
+    margin: auto;
+  }
+  .call-input {
+    width: 75%;
+    display: block;
+    margin: 12px auto;
+    padding-left: 15px;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #000;
+    color: #000;
+  }
+  .callbackbtn {
+    width: 75%;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    background: #3f6b68;
+    color: #fff;
+    height: 40px;
+    border: 1px solid #3f6b68;
+  }
+  .call-back-heading {
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    font-weight: 700;
+    font-size: 17px;
+  }
+  .right-parental {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .plan-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 0px 15px;
+    height: 160px;
+    border-bottom: 2px solid #3f6b68;
+  }
+  
+  .plan-slider {
+    margin: auto;
+    width: 95%;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    padding: 1px 0px;
+    margin-bottom: 25px;
+  }
+  
+  .selectplainlist-main {
+    height: 175px;
+    border-bottom: 2px solid #000;
+    padding-top: 15px;
+  }
+  
+  .bullet {
+    width: 6px;
+    height: 6px;
+    background-color: #3f6b68;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .selecpra-button {
+    background: #3f6b68;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    color: #fff;
+    width: 135px;
+    margin: 15px auto 30px auto;
+    display: block;
+  }
+  
+  .left-detail p {
+    font-size: 11px;
+    margin-bottom: 0px;
+    color: #000;
+  }
+  
+  .right-detail p {
+    font-size: 11px;
+    color: #000;
+    margin-bottom: 0px !important;
+  }
+  
+  .plan-heading h4 {
+    padding: 15px;
+    text-align: center;
+    background: #ebe4c8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.05);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .sliderheading {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .imgresoiniveslider-news {
+    display: block;
+    margin: 20px auto 30px auto;
+    width: 65%;
+    height: 235px;
+  }
+  
+  .photo-client-main {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .enroll-h-pragnancy {
+    background-color: #ebe4c8;
+    padding: 12px 0px;
+  }
+  
+  .main-plan {
+    padding: 20px 0px;
+  }
+  
+  .main-health {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .health-preg-image {
+    background: #fff;
+    padding: 26px;
+    height: 125px;
+    border-radius: 50%;
+    width: 125px;
+  }
+  
+  .health-preg-image img {
+    height: 80px;
+    width: 70px;
+  }
+  
+  .health-1 h5 {
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .healthdes-para {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  
+  .imgresoiniveslider-news {
+    display: block;
+    margin: 20px auto 30px auto;
+    width: 65%;
+    height: 235px;
+  }
+  
+  .imgresoiniveslider-partner {
+    display: block;
+    margin: 20px auto 30px auto;
+    width: 70%;
+  }
+  
+  .galleryimgresoiniveslider {
+    display: block;
+    margin: 10px auto 30px auto;
+    width: 65%;
+    height: 175px;
+  }
+  
+  /*testimonials heading*/
+  .testimonial-main {
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 7%);
+    border-radius: 12px;
+    width: 250px;
+    margin: 0px auto 40px auto;
+    padding: 15px;
+    height: 290px;
+  }
+  .feed-testi-heading {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .feed-testi-para {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 0px;
+  }
+  .rating {
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  
+  .healthdes-para {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 0px;
+  }
+  
+  .client-pic {
+    box-shadow: 0px 3px 10px #ccc;
+    border-radius: 50%;
+    height: 40px;
+  }
+  
+  .cline-name {
+    margin-bottom: 0px;
+  }
+  
+  .photo-client-main {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .sliderheadingtest {
+    margin-top: 60px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  /**life support section css***/
+.pagesupport{
+    background: #EBE4C8;
+    border: 4px solid #DDD5B7;
+    padding: 30px 0px;
+    margin-bottom: 30px;
+}
+.left-spport img{
+    width: 50%;
+}
+.right-spport p{
+    line-height: 30px;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.elderphysio{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+.main-heading{
+    font-size: 30px;
+    text-align: center;
+    color: #3f6b68;
+    font-weight: 900;
+    margin: 30px 0px;
+}
+
+.roadsafety-list li {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 36px;
+}
+.safety-para {
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+}
+
+.engage-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0px;
+    width: 25%;
+  }
+  
+  .engage-main h6 {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    width: 75%;
+    height: 105px;
+    font-weight: 600;
+  }
+  
+  .engageimg-div {
+    background: #ebe4c8;
+    padding: 26px;
+    height: 125px;
+    border-radius: 50%;
+    width: 125px;
+    margin-bottom: 30px;
+    border: 2px solid #ddd5b7;
+  }
+  .engageimg-div img {
+    height: 75px;
+    margin: auto;
+    display: block;
+  }
+
+  .physiocircle-main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .physiocircle-main-1{
+    display: flex;
+    justify-content: space-around;
+  }
+  .booknewawssion {
+    background: #ebe4c8;
+    border: 4px solid #ddd5b7;
+  }
+  .sessioncall-btn {
+    display: block;
+    margin: auto;
+    height: 50px;
+    width: 175px;
+    border-radius: 10px;
+    background-color: #3f6b68;
+    border: 2px solid #3f6b68;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .sessioncall-para {
+    color: #888888;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0px;
+    font-weight: 600;
+  }
+  
+  .sessioncall-heading {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px auto 30px auto;
+    width: 65%;
+    line-height: 60px;
+  }
+/**life support section css end**/
+
+
+
+/*popup css start*/
+.request-call{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1055;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+.sub-req-contetn{
+  background-color: rgba(0,0,0,.2);
+  box-shadow: 0px 8px 10px 10px rgb(130 130 130 / 40%);
+  padding: 20px 0px !important;
+  height: 100%;
+}
+.close-bnt{
+  margin-left: auto;
+  display: block;
+  background-color: transparent;
+  outline: none;
+  color: #000;
+  margin-bottom: 10px;
+  border: none;
+  font-weight: 700;
+  font-size: 25px;
+}
+.req-call-content{
+  display: block;
+  margin: auto;
+  width: 320px;
+  background-color: #fff;
+  padding: 25px;
+  margin-top: 80px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.reqcall-input{
+  width: 270px;
+  margin: 0px auto 10px auto;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  color: #000;
+  height: 40px;
+}
+
+.lets-talk{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lets-talk h6{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.reqcall-btn{
+  width: 270px;
+  margin: 0px auto 10px auto;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #3F6B68;
+  background-color: #3F6B68;
+  padding-left: 10px;
+  color: #fff;
+  height: 40px;
+}
+/*pop up css end*/

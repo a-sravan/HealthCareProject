@@ -1,0 +1,531 @@
+<div class="container video-container">
+  <div class="row cst-video">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="bls-video-sec">
+        <div class="bls-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/momlpT024_Y" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
+</div>
+<!--tab section of bls-->
+<div class="container">
+  <div class="row cst-bls-row">
+    <div class="col-md-6">
+      <div class="cst-tabmain">
+        <div class="blstraing-enqi">
+          <div class="bls-sb-heading">Safety Training</div>
+          <div><button class="blsenquirys" (click)="openEnquiry()">Enquiry</button></div>
+        </div>
+        <div class="tab-bar">
+          <ul class="med-astroul">
+            <li style="margin-top:0px;" (click)="tabslider(1)" [ngClass]="{'tab-active':tabId === 1}">
+              Introduction</li>
+            <li (click)="tabslider(2)" [ngClass]="{'tab-active':tabId === 2}">Why Choose Us</li>
+            <li (click)="tabslider(3)" [ngClass]="{'tab-active':tabId === 3}">Service Information</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="tab-content-right">
+        <div class="show-hide">
+          <div class="container-val" *ngIf="tabId === 1">
+            <ul class="introlist">
+              <li>
+                <div><img src="../../assets/image/blstab-1.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Promotes a safe & healthy work environment. </p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/blstab-2.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Enhance employee productivity and lower abstenism.</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/blstab-3.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Better equipped to handle the crisis.</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/blstab-4.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Ensure Compliances & future incident prevention.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="container-val" *ngIf="tabId=== 2">
+            <ul class="introlist">
+              <li>
+                <div><img src="../../assets/image/blstab-5.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Train anywhere, anytime</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/blstab-6.svg" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents"> ISO 9001: 2015 Certified</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/blstab-7.svg" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Recommended program by IMA</p>
+                </div>
+              </li>
+              <li>
+                <div><img src="../../assets/image/blstab-8.png" alt="" class="introsimage"></div>
+                <div>
+                  <p class="introcontents">Get certified same day</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="container-val" *ngIf="tabId===3">
+            <swiper [config]="configtabslider" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+              <ng-template swiperSlide>
+                <div class="plan-slider">
+                  <div class="plan-heading">
+                    <h4>Emergency Care Training</h4>
+                  </div>
+
+                  <div class="plan-detail">
+                    <div class="left-detail">
+                      <p> <span class="bullet"></span> Differentiate between Sudden Cardiac Arrest v/s Heart Attack</p>
+                      <p> <span class="bullet"></span> Basic Life Support and Simulation training for Cardio Pulmonary Resuscitation - Adult,
+                        Children & Infant.</p>
+                      <p> <span class="bullet"></span> How to use an AED- Adult, Children & Infant.</p>
+                      <p> <span class="bullet"></span> Handling- Choking & Drowning</p>
+                      <p> <span class="bullet"></span> How to Identify and handle a Brain Stroke</p>
+                    </div>
+                  </div>
+                  <button class="selecpra-button" routerLink="/road-safety"(click)="change_route('road-safety')">Select Plan</button>
+                </div>
+              </ng-template>
+              <ng-template swiperSlide>
+                <div class="plan-slider">
+                  <div class="plan-heading">
+                    <h4>First Aid Training</h4>
+                  </div>
+                  <div class="plan-detail">
+                    <div class="left-detail">
+                      <p><span class="bullet"></span>Bleeding</p>
+                      <p><span class="bullet"></span>Shock and fainting</p>
+                      <p><span class="bullet"></span>Dislocation in Fracture</p>
+                      <p><span class="bullet"></span>Burn</p>
+                      <p><span class="bullet"></span>Hypoglycemia</p>
+                      <p><span class="bullet"></span>Heat stroke</p>
+                      <p><span class="bullet"></span>Heat Exhaution</p>
+                      <p><span class="bullet"></span>Spinal injuries</p>
+                      <p><span class="bullet"></span>Soft tissues injuries- sprains/ strains</p>
+                    </div>
+                  </div>
+                  <button class="selecpra-button" routerLink="/first-aid"(click)="change_route('first-aid')">Select Plan</button>
+                </div>
+              </ng-template>
+              <ng-template swiperSlide>
+                <div class="plan-slider">
+                  <div class="plan-heading">
+                    <h4>Electrical Safety Training</h4>
+                  </div>
+                  <div class="plan-detail">
+                    <div class="left-detail">
+                      <p><span class="bullet"></span>Identifying Workplace hazards- Shock & Fire</p>
+                      <p><span class="bullet"></span>Basic safety controls & practices at work</p>
+                      <p><span class="bullet"></span>Maintaining Safe & operational workplace</p>
+                      <p><span class="bullet"></span>Risk assessment and approach boundaries</p>
+                      <p><span class="bullet"></span>Best Practices on Safety & control measures.</p>
+                    </div>
+                  </div>
+                  <button class="selecpra-button" routerLink="/electrical-safety"(click)="change_route('electrical-safety')">Select Plan</button>
+                </div>
+              </ng-template>
+            </swiper>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--tab section bls end-->
+
+<!--page support description-->
+
+<section class="pagesupport">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="left-spport">
+          <img src="../../assets/image/lifesupport.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="right-spport">
+          <p>Life Support & Safety is the care that first-responders, healthcare professionals or trained professional
+            impart upon the anyone suffering from cardiac arrest, obstructed airways or respiratory distress as a first
+            aid. Nearly 45% of cardiac arrest victims have a chance of surviving with a CPR trained bystander around.
+            Heka Healthy You believes that in order to make our society aware and prepared for such commonly occurring
+            yet life threatening ailments, it is imperative to train individuals in Life Support & Safety. Therefore, we
+            offer hands-on training by certified professionals in Emergency care, First aid, Road safety protocols &
+            Safe electrical training.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="enroll-h-pragnancy">
+  <div class="container" *ngIf="tabId=== 1" style="padding: 15px 0px;">
+    <div class="main-health">
+      <div class="health-1">
+        <h5>Safety At <br> Work</h5>
+      </div>
+      <div class="health-2">
+        <div class="health-preg-image">
+          <img src="../../assets/image/blshealthcare.png" alt="">
+        </div>
+        <p class="healthdes-para">Health
+        </p>
+      </div>
+      <div class="health-3">
+        <div class="health-preg-image">
+          <img src="../../assets/image/file-protection.png" alt="">
+        </div>
+        <p class="healthdes-para">Regulation</p>
+      </div>
+      <div class="health-4">
+        <div class="health-preg-image">
+          <img src="../../assets/image/helmet.png" alt="">
+        </div>
+        <p class="healthdes-para">Protection</p>
+      </div>
+      <div class="health-5">
+        <div class="health-preg-image">
+          <img src="../../assets/image/warning.png" alt="">
+        </div>
+        <p class="healthdes-para">Hazard analysis</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="enroll-h-pragnancy">
+  <div class="container" *ngIf="tabId=== 2" style="padding: 15px 0px;">
+    <div class="main-health">
+      <div class="health-1">
+        <h5>Safety At <br> Work</h5>
+      </div>
+      <div class="health-2">
+        <div class="health-preg-image">
+          <img src="../../assets/image/checklist.png" alt="">
+        </div>
+        <p class="healthdes-para">Compliance
+        </p>
+      </div>
+      <div class="health-3">
+        <div class="health-preg-image">
+          <img src="../../assets/image/training.png" alt="">
+        </div>
+        <p class="healthdes-para">Training & <br> Education</p>
+      </div>
+      <div class="health-4">
+        <div class="health-preg-image">
+          <img src="../../assets/image/insurance.png" alt="">
+        </div>
+        <p class="healthdes-para">Insurance</p>
+      </div>
+      <div class="health-5">
+        <div class="health-preg-image">
+          <img src="../../assets/image/teamwork.png" alt="">
+        </div>
+        <p class="healthdes-para">Employee <br> Management</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="enroll-h-pragnancy" *ngIf="tabId=== 3" style="padding: 15px 0px;">
+  <div class="container">
+    <div class="main-health">
+      <div class="health-1">
+        <h5>Setting Up <br> Right</h5>
+      </div>
+      <div class="health-2">
+        <div class="health-preg-image">
+          <img src="../../assets/image/information-service.png" alt="">
+        </div>
+        <p class="healthdes-para">Identify Training <br> Needs
+        </p>
+      </div>
+      <div class="health-3">
+        <div class="health-preg-image">
+          <img src="../../assets/image/goal.png" alt="">
+        </div>
+        <p class="healthdes-para">Set Learning <br>
+          Objectives</p>
+      </div>
+      <div class="health-4">
+        <div class="health-preg-image">
+          <img src="../../assets/image/cpr.png" alt="">
+        </div>
+        <p class="healthdes-para">Deliver The <br> Course</p>
+      </div>
+      <div class="health-5">
+        <div class="health-preg-image">
+          <img src="../../assets/image/certificate.png" alt="">
+        </div>
+        <p class="healthdes-para">Evaluation & <br> Certification</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--page support description-->
+
+<div class="container">
+  <div class="first-slider">
+    <h3 class="sliderheading">OUR PARTNERS</h3>
+    <swiper [config]="configpartner" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner3.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner4.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/parnter5.svg" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner1.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner6.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/partner2.svg" alt="" srcset="" class="imgresoiniveslider-partner">
+      </ng-template>
+    </swiper>
+  </div>
+</div>
+<div class="container">
+  <div class="second-slider">
+    <h3 class="sliderheading">NEWS ROOM</h3>
+    <swiper [config]="confignews" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <img src="../../assets/image/blsnews-1.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/blsnews-2.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/blsnews-3.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/blsnews-4.png" alt="" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/blsnews-5.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/blsnews-6.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/blsnews-7.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/blsnews-8.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="../../assets/image/blsnews-9.png" srcset="" class="imgresoiniveslider-news">
+      </ng-template>
+    </swiper>
+  </div>
+</div>
+<!--new bls end-->
+
+<!--testimonials slider-->
+<div class="container">
+  <div class="first-slider">
+    <h3 class="sliderheadingtest">WHAT OUR CLIENTS SAY ABOUT US</h3>
+
+    <swiper [config]="config" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Kailash Yadav</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Amazing Instructor</h6>
+          <p class="feed-testi-para">Our instructor did an excellent job of providing us with valuable hands-on time to
+            practice our life-saving skills. She was very informative and enthusiastic about teaching the class. After
+            taking this class, I felt very prepared for real-world scenarios.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Ritika Kaur</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Great Learning Experience</h6>
+          <p class="feed-testi-para">The trainer was extremely nice and patient with us. The training was of high
+            quality. All lessons were explained in reasonable detail, and we still had plenty of time to practise adult
+            and infant CPR scenarios.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Sonakshi Bakshi</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Incredible Course</h6>
+          <p class="feed-testi-para">I feel so much better knowing that I can assist in an emergency. This was an
+            extremely valuable experience, and I am grateful for the opportunity to take this course.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/boytesti.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Kailash Yadav</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Amazing Instructor</h6>
+          <p class="feed-testi-para">Our instructor did an excellent job of providing us with valuable hands-on time to
+            practice our life-saving skills. She was very informative and enthusiastic about teaching the class. After
+            taking this class, I felt very prepared for real-world scenarios.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Ritika Kaur</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Great Learning Experience</h6>
+          <p class="feed-testi-para">The trainer was extremely nice and patient with us. The training was of high
+            quality. All lessons were explained in reasonable detail, and we still had plenty of time to practise adult
+            and infant CPR scenarios.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-main">
+          <div class="photo-client-main">
+            <div class="photo-client">
+              <img src="../../assets/image/girl-testi.png" alt="" class="client-pic">
+            </div>
+            <div class="feed-back">
+              <h6 class="cline-name">Sonakshi Bakshi</h6>
+              <ul class="rating">
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/feelstar.png" alt=""></li>
+                <li><img src="../../assets/image/blankstar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <h6 class="feed-testi-heading">Incredible Course</h6>
+          <p class="feed-testi-para">I feel so much better knowing that I can assist in an emergency. This was an
+            extremely valuable experience, and I am grateful for the opportunity to take this course.
+          </p>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+</div>
+<!--testimonials slider-->
+
+<!--faq section-->
+<section style="background: #EBE4C8;">
+  <div class="container">
+    <div class="faq-wrapper">
+      <div class="faq-wrapper-1">
+        <h3>Got <br>Questions?</h3>
+        <h5>We’d love to answer them !</h5>
+        <div class="viewf-aq">
+          <a href routerLink="/safety-faq" (click)="change_route('safety-faq')">View FAQ</a>
+        </div>
+      </div>
+      <div class="faq-wrapper-2">
+        <img src="../../assets/image/faqbannerold.svg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
